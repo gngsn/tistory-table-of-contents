@@ -2,7 +2,9 @@
 
 .toc-app-common {
     display: inline-block;
-    padding: 0.6rem 1.25rem 1.25rem 1.25rem;
+    margin: 10rem 1.25rem 1.25rem 1.25rem;
+    padding: 1rem;
+    right: 2vw;
 }
 
 .toc-app-basic {
@@ -16,7 +18,7 @@
 /* custom item style */
 
 .items {
-    height: 70vh;
+    height: auto;
     width: 15.3rem;
     overflow-y: scroll;
     -ms-overflow-style: none;
@@ -57,14 +59,14 @@
 }
 
 .toc-active, .toc-common:hover {
-    color: #008408;
+    color: #0593d3;
 }
 
 .toc-parent-active {
-    color: #A1C7A0;
+    color: #0592d383;
 }
 
-@media (max-width: 83.75rem) {
+@media (max-width: 73.75rem) {
     .toc-app-common {
         visibility: hidden;
     }
