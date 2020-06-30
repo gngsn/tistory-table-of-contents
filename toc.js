@@ -5,45 +5,37 @@
  * version 0.1.5
  */
 
-const CLASS_OF_MAIN_CONTENTS = '.area_view';
+const CLASS_OF_MAIN_CONTENTS = '.article_view';
 
 const CONSTANTS = (function () {
   const KEY_OF_H1 = 1;
   const KEY_OF_H2 = 2;
   const KEY_OF_H3 = 3;
-  const KEY_OF_H4 = 4;
 
   const LEVEL_1 = 1;
   const LEVEL_2 = 2;
   const LEVEL_3 = 3;
-  const LEVEL_4 = 4;
 
   /* 최상위 태그에 따른 레벨 Map */
   const levelsByH1 = function () {
-    return new Map([[KEY_OF_H1, LEVEL_1], [KEY_OF_H2, LEVEL_2], [KEY_OF_H3, LEVEL_3], [KEY_OF_H4, LEVEL_4]])
+    return new Map([[KEY_OF_H1, LEVEL_1], [KEY_OF_H2, LEVEL_2], [KEY_OF_H3, LEVEL_3]])
   }
 
   const levelsByH2 = function () {
-    return new Map([[KEY_OF_H2, LEVEL_1], [KEY_OF_H3, LEVEL_2], [KEY_OF_H4, LEVEL_3]])
+    return new Map([[KEY_OF_H2, LEVEL_1], [KEY_OF_H3, LEVEL_2]])
   }
 
   const levelsByH3 = function () {
-    return new Map([[KEY_OF_H3, LEVEL_1], [KEY_OF_H4, LEVEL_2]])
-  }
-
-  const levelsByH4 = function () {
-    return new Map([[KEY_OF_H4, LEVEL_1]])
+    return new Map([[KEY_OF_H3, LEVEL_1]])
   }
 
   return {
     indexOfH1: KEY_OF_H1,
     indexOfH2: KEY_OF_H2,
     indexOfH3: KEY_OF_H3,
-    indexOfH4: KEY_OF_H4,
     levelsByH1: levelsByH1(),
     levelsByH2: levelsByH2(),
     levelsByH3: levelsByH3(),
-    levelsByH4: levelsByH4(),
   }
 })();
 
@@ -95,9 +87,9 @@ const TOC_CARD = (function () {
     const tocElementsCard = document.querySelector('#toc-elements');
 
     const mainContents = document.querySelector(CLASS_OF_MAIN_CONTENTS);
-
+    
     const hTags = (function () {
-      const foundHTags = mainContents.querySelectorAll('h1, h2, h3, h4');
+      const foundHTags = mainContents.querySelectorAll('h1, h2, h3');
 
       /* 글 내용 밑에 있는 [...카테고리의 다른 글] h4 제거 */
       return [...foundHTags].filter(hTag => !hTag.parentElement.classList.contains('another_category'));
@@ -109,7 +101,7 @@ const TOC_CARD = (function () {
         return false;
       }
 
-      return hTags.length !== 0;
+      return hTags.length > 1;
     }
 
     const initTocElementsCard = function () {
@@ -197,7 +189,7 @@ const TOC_CARD = (function () {
     }
 
     const findCurrentHTag = function () {
-      if (hTags.length == 0) {
+      if (hTags.length < 2) {
         return undefined;
       }
 
