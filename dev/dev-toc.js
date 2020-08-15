@@ -6,6 +6,27 @@
  */
 
 const CLASS_OF_MAIN_CONTENTS = '.area_view';
+const TOC_BTN = '.toc-btn';
+
+
+
+const btn = (function () {
+  const parentOfmc = document.querySelector(CLASS_OF_PARENT_MAIN_CONTENTS);
+  const existsHTags = tocCardService.checkExistenceOfHTags();
+  if (existsHTags) {
+    const tocBtnItem = document.createElement('div');
+    const tocBtnLabel = document.createElement('h2');
+    tocBtnItem.classList.add('toc-btn');
+    
+    tocBtnItem.appendChild(tocBtnLabel);
+    // tocBtnItem.innerHTML += hTag.innerText;
+    // tocBtnItem.id = `toc-${indexOfHTag}`;
+    // tocBtnItem.classList = 'toc-common';
+
+    parentOfmc.appendChild(tocBtnItem);
+    alert('asdsa');
+  }
+});
 
 const CONSTANTS = (function () {
   const KEY_OF_H1 = 1;

@@ -1,31 +1,10 @@
-<html lang="ko"><head>
-<!-- <script>
-			const elementUiCss = document.createElement('link')
-			elementUiCss.rel = 'stylesheet'
-			elementUiCss.href = 'https://unpkg.com/element-ui/lib/theme-chalk/index.css'
-			document.head.appendChild(elementUiCss)
 
-			const vueScript = document.createElement('script')
-			vueScript.src = 'https://unpkg.com/vue/dist/vue.js'
-			document.head.appendChild(vueScript)
-			
-			const elementUiScript = document.createElement('script')
-			elementUiScript.src = 'https://unpkg.com/element-ui/lib/index.js'
-			document.head.appendChild(elementUiScript)
-</script> -->
+<!DOCTYPE html>
+<html lang="ko">
 
-		<!-- import CSS -->
-		<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"> -->
-<link rel="stylesheet" href="./dev-toc.css">
-<!-- import Vue before Element -->
-<!-- <script src="https://unpkg.com/vue/dist/vue.js"></script> -->
-<!-- import JavaScript -->
-<!-- <script src="https://unpkg.com/element-ui/lib/index.js"></script> -->
-
-
-<link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/lib/lightbox/css/lightbox.min.css"><link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/assets/blog/7030d16adb598bf18f40d52aa2445c3890b96c04/blogs/style/content/font.css?_version_=7030d16adb598bf18f40d52aa2445c3890b96c04"><link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/assets/blog/7030d16adb598bf18f40d52aa2445c3890b96c04/blogs/style/content/content.css?_version_=7030d16adb598bf18f40d52aa2445c3890b96c04"><!--[if lt IE 9]><script src="https://t1.daumcdn.net/tistory_admin/lib/jquery/jquery-1.12.4.min.js"></script><![endif]--><!--[if gte IE 9]>
-<!--><script src="https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script src="https://t1.daumcdn.net/tistory_admin/lib/jquery/jquery-3.2.1.min.js"></script><!--<![endif]-->
+<head>
+<link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/lib/lightbox/css/lightbox.min.css" /><link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/assets/blog/ce07b84ceeff9acb218cdf96ccb5e6a409b92417/blogs/style/content/font.css?_version_=ce07b84ceeff9acb218cdf96ccb5e6a409b92417" /><link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/assets/blog/ce07b84ceeff9acb218cdf96ccb5e6a409b92417/blogs/style/content/content.css?_version_=ce07b84ceeff9acb218cdf96ccb5e6a409b92417" /><!--[if lt IE 9]><script src="https://t1.daumcdn.net/tistory_admin/lib/jquery/jquery-1.12.4.min.js"></script><![endif]--><!--[if gte IE 9]>
+<!--><script src="https://t1.daumcdn.net/tistory_admin/lib/jquery/jquery-3.2.1.min.js"></script><!--<![endif]-->
 <script src="https://t1.daumcdn.net/tistory_admin/lib/lightbox/js/lightbox-plus-jquery.min.js"></script>
 <script>
 lightbox.options.fadeDuration = 200;
@@ -33,56 +12,102 @@ lightbox.options.resizeDuration = 200;
 lightbox.options.wrapAround = false;
 lightbox.options.albumLabel = "%1 / %2";
 </script>
-<script>var tjQuery = jQuery.noConflict(true);</script><style type="text/css">.tt_article_useless_p_margin p {padding-top:0 !important;padding-bottom:0 !important;margin-top:0 !important;margin-bottom:0 !important;}</style><meta name="referrer" content="always"><link rel="icon" href="https://tistory1.daumcdn.net/tistory/3243776/33bf626382304a188be03519e2a5d528"><link rel="apple-touch-icon" href="//img1.daumcdn.net/thumb/C180x180/?fname=https%3A%2F%2Ftistory3.daumcdn.net%2Ftistory%2F3243776%2Fattach%2F5b586e2862584b7cbe0756f0ce9788b9">
-<link rel="apple-touch-icon" sizes="76x76" href="//img1.daumcdn.net/thumb/C76x76/?fname=https%3A%2F%2Ftistory3.daumcdn.net%2Ftistory%2F3243776%2Fattach%2F5b586e2862584b7cbe0756f0ce9788b9">
-<link rel="apple-touch-icon" sizes="120x120" href="//img1.daumcdn.net/thumb/C120x120/?fname=https%3A%2F%2Ftistory3.daumcdn.net%2Ftistory%2F3243776%2Fattach%2F5b586e2862584b7cbe0756f0ce9788b9">
-<link rel="apple-touch-icon" sizes="152x152" href="//img1.daumcdn.net/thumb/C152x152/?fname=https%3A%2F%2Ftistory3.daumcdn.net%2Ftistory%2F3243776%2Fattach%2F5b586e2862584b7cbe0756f0ce9788b9"><meta name="description" content="이전 글 : [토비의 스프링] 6. AOP (1) 지금까지 해왔던 작업은 비즈니스 로직에 반복적으로 등장하는 트랜잭션 코드를 투명하게 분리해내는 것이었다. 투명하다는 것은 투명한 유리를 사이에 둔 것처럼, 부가기능..">
+<script>var tjQuery = jQuery.noConflict(true);</script><style type="text/css">.tt_article_useless_p_margin p {padding-top:0 !important;padding-bottom:0 !important;margin-top:0 !important;margin-bottom:0 !important;}</style><meta name="referrer" content="always"><link rel="icon" href="//t1.daumcdn.net/tistory_admin/static/top/favicon_0630.ico" /><link rel="apple-touch-icon" href="//img1.daumcdn.net/thumb/C180x180/?fname=https%3A%2F%2Ftistory3.daumcdn.net%2Ftistory%2F3172059%2Fattach%2F06d726fdd8264d16af5ed24ebc08064f">
+<link rel="apple-touch-icon" sizes="76x76" href="//img1.daumcdn.net/thumb/C76x76/?fname=https%3A%2F%2Ftistory3.daumcdn.net%2Ftistory%2F3172059%2Fattach%2F06d726fdd8264d16af5ed24ebc08064f">
+<link rel="apple-touch-icon" sizes="120x120" href="//img1.daumcdn.net/thumb/C120x120/?fname=https%3A%2F%2Ftistory3.daumcdn.net%2Ftistory%2F3172059%2Fattach%2F06d726fdd8264d16af5ed24ebc08064f">
+<link rel="apple-touch-icon" sizes="152x152" href="//img1.daumcdn.net/thumb/C152x152/?fname=https%3A%2F%2Ftistory3.daumcdn.net%2Ftistory%2F3172059%2Fattach%2F06d726fdd8264d16af5ed24ebc08064f"><meta name="description" content="안녕하세요. 지난 포스팅에서 SELECT문에 대한 다양한 필터링에 대해 알아보았습니다. 이번에는 SELECT문에 대한 다양한 필터링 및 정렬 기능에 대해 더 알아보도록 하겠습니다. ***************** INDEX ********..">
 
 <!-- BEGIN OPENGRAPH -->
-<link rel="canonical" href="https://www.wbluke.com/20"><meta property="og:type" content="article"><meta property="og:url" content="https://www.wbluke.com/20"><meta property="og:site_name" content="함께 자라기"><meta property="og:title" content="[토비의 스프링] 6. AOP (2)"><meta name="by" content="우비닉"><meta property="og:description" content="이전 글 : [토비의 스프링] 6. AOP (1) 지금까지 해왔던 작업은 비즈니스 로직에 반복적으로 등장하는 트랜잭션 코드를 투명하게 분리해내는 것이었다. 투명하다는 것은 투명한 유리를 사이에 둔 것처럼, 부가기능.."><meta property="og:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbFaHKL%2Fbtqzs6tP9BM%2F4KqhfoX8QE7b4KSwNSYha1%2Fimg.png">
+<link rel="canonical" href="https://gngsn.tistory.com/47" /><meta property="og:type" content="article"><meta property="og:url" content="https://gngsn.tistory.com/47" ><meta property="og:site_name" content="pageseo" ><meta property="og:title" content="SQL SELECT, 제대로 사용하기" ><meta name="by" content="gngsn" ><meta property="og:description" content="안녕하세요. 지난 포스팅에서 SELECT문에 대한 다양한 필터링에 대해 알아보았습니다. 이번에는 SELECT문에 대한 다양한 필터링 및 정렬 기능에 대해 더 알아보도록 하겠습니다. ***************** INDEX ********.." ><meta property="og:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F2WIPF%2FbtqE4DL8E7t%2FTKtTcCkk92pW4PtxU3wH50%2Fimg.png" >
 <!-- END OPENGRAPH -->
 
 
 
 <!-- BEGIN TWITTERCARD -->
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@TISTORY"><meta name="twitter:title" content="[토비의 스프링] 6. AOP (2)"><meta name="twitter:description" content="이전 글 : [토비의 스프링] 6. AOP (1) 지금까지 해왔던 작업은 비즈니스 로직에 반복적으로 등장하는 트랜잭션 코드를 투명하게 분리해내는 것이었다. 투명하다는 것은 투명한 유리를 사이에 둔 것처럼, 부가기능.."><meta property="twitter:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbFaHKL%2Fbtqzs6tP9BM%2F4KqhfoX8QE7b4KSwNSYha1%2Fimg.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@TISTORY"><meta name="twitter:title" content="SQL SELECT, 제대로 사용하기" ><meta name="twitter:description" content="안녕하세요. 지난 포스팅에서 SELECT문에 대한 다양한 필터링에 대해 알아보았습니다. 이번에는 SELECT문에 대한 다양한 필터링 및 정렬 기능에 대해 더 알아보도록 하겠습니다. ***************** INDEX ********.." ><meta property="twitter:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F2WIPF%2FbtqE4DL8E7t%2FTKtTcCkk92pW4PtxU3wH50%2Fimg.png" >
 <!-- END TWITTERCARD -->
 
 
 
 <!-- BEGIN DAUMAPP -->
-<meta property="dg:plink" content="https://www.wbluke.com/20"><meta name="plink" content="https://www.wbluke.com/20"><meta name="title" content="[토비의 스프링] 6. AOP (2)"><meta name="article:media_name" content="함께 자라기"><meta property="article:mobile_url" content="https://www.wbluke.com/m/20"><meta property="article:pc_url" content="https://www.wbluke.com/20"><meta property="article:mobile_view_url" content="https://wbluke.tistory.com/m/20"><meta property="article:pc_view_url" content="https://wbluke.tistory.com/20"><meta property="article:talk_channel_view_url" content="https://www.wbluke.com/m/20"><meta property="article:pc_service_home" content="https://www.tistory.com"><meta property="article:mobile_service_home" content="https://www.tistory.com/m"><meta property="article:txid" content="3243776_20"><meta property="article:published_time" content="2019-11-02T17:29:01+09:00"><meta property="og:regDate" content="20191102172901"><meta property="article:modified_time" content="2019-11-06T17:03:48+09:00">
+<meta property="dg:plink" content="https://gngsn.tistory.com/47" ><meta name="plink" content="https://gngsn.tistory.com/47" ><meta name="title" content="SQL SELECT, 제대로 사용하기" ><meta name="article:media_name" content="pageseo" ><meta property="article:mobile_url" content="https://gngsn.tistory.com/m/47" ><meta property="article:pc_url" content="https://gngsn.tistory.com/47" ><meta property="article:mobile_view_url" content="https://gngsn.tistory.com/m/47" ><meta property="article:pc_view_url" content="https://gngsn.tistory.com/47" ><meta property="article:talk_channel_view_url" content="https://gngsn.tistory.com/m/47" ><meta property="article:pc_service_home" content="https://www.tistory.com" ><meta property="article:mobile_service_home" content="https://www.tistory.com/m" ><meta property="article:txid" content="3172059_47" /><meta property="article:published_time" content="2020-06-23T15:46:06+09:00" ><meta property="og:regDate" content="20200623154606" ><meta property="article:modified_time" content="2020-06-23T16:48:26+09:00" >
 <!-- END DAUMAPP -->
 
 
 
 <!-- BEGIN STRUCTURED_DATA -->
-<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BlogPosting","mainEntityOfPage":{"@id":"https:\/\/www.wbluke.com\/20"},"url":"https:\/\/www.wbluke.com\/20","headline":"[\ud1a0\ube44\uc758 \uc2a4\ud504\ub9c1] 6. AOP (2)","description":"\uc774\uc804 \uae00 : [\ud1a0\ube44\uc758 \uc2a4\ud504\ub9c1] 6. AOP (1) \uc9c0\uae08\uae4c\uc9c0 \ud574\uc654\ub358 \uc791\uc5c5\uc740 \ube44\uc988\ub2c8\uc2a4 \ub85c\uc9c1\uc5d0 \ubc18\ubcf5\uc801\uc73c\ub85c \ub4f1\uc7a5\ud558\ub294 \ud2b8\ub79c\uc7ad\uc158 \ucf54\ub4dc\ub97c \ud22c\uba85\ud558\uac8c \ubd84\ub9ac\ud574\ub0b4\ub294 \uac83\uc774\uc5c8\ub2e4. \ud22c\uba85\ud558\ub2e4\ub294 \uac83\uc740 \ud22c\uba85\ud55c \uc720\ub9ac\ub97c \uc0ac\uc774\uc5d0 \ub454 \uac83\ucc98\ub7fc, \ubd80\uac00\uae30\ub2a5..","author":{"@type":"Person","name":"\uc6b0\ube44\ub2c9"},"image":{"@type":"ImageObject","url":"https:\/\/img1.daumcdn.net\/thumb\/R800x0\/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbFaHKL%2Fbtqzs6tP9BM%2F4KqhfoX8QE7b4KSwNSYha1%2Fimg.png","width":"800px","height":"800px"},"datePublished":"20191102T17:29:01+09:00","dateModified":"20191106T17:03:48+09:00","publisher":{"@type":"Organization","name":"TISTORY","logo":{"@type":"ImageObject","url":"https:\/\/t1.daumcdn.net\/tistory_admin\/static\/images\/openGraph\/opengraph.png","width":"800px","height":"800px"}}}</script>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BlogPosting","mainEntityOfPage":{"@id":"https:\/\/gngsn.tistory.com\/47"},"url":"https:\/\/gngsn.tistory.com\/47","headline":"SQL SELECT, \uc81c\ub300\ub85c \uc0ac\uc6a9\ud558\uae30","description":"\uc548\ub155\ud558\uc138\uc694. \uc9c0\ub09c \ud3ec\uc2a4\ud305\uc5d0\uc11c SELECT\ubb38\uc5d0 \ub300\ud55c \ub2e4\uc591\ud55c \ud544\ud130\ub9c1\uc5d0 \ub300\ud574 \uc54c\uc544\ubcf4\uc558\uc2b5\ub2c8\ub2e4. \uc774\ubc88\uc5d0\ub294 SELECT\ubb38\uc5d0 \ub300\ud55c \ub2e4\uc591\ud55c \ud544\ud130\ub9c1 \ubc0f \uc815\ub82c \uae30\ub2a5\uc5d0 \ub300\ud574 \ub354 \uc54c\uc544\ubcf4\ub3c4\ub85d \ud558\uaca0\uc2b5\ub2c8\ub2e4. ***************** INDEX ********..","author":{"@type":"Person","name":"gngsn"},"image":{"@type":"ImageObject","url":"https:\/\/img1.daumcdn.net\/thumb\/R800x0\/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F2WIPF%2FbtqE4DL8E7t%2FTKtTcCkk92pW4PtxU3wH50%2Fimg.png","width":"800px","height":"800px"},"datePublished":"20200623T15:46:06+09:00","dateModified":"20200623T16:48:26+09:00","publisher":{"@type":"Organization","name":"TISTORY","logo":{"@type":"ImageObject","url":"https:\/\/t1.daumcdn.net\/tistory_admin\/static\/images\/openGraph\/opengraph.png","width":"800px","height":"800px"}}}</script>
 <!-- END STRUCTURED_DATA -->
 
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
-	<title>[토비의 스프링] 6. AOP (2)</title>
-	<link rel="alternate" type="application/rss+xml" title="함께 자라기" href="https://www.wbluke.com/rss">
+  <title>SQL SELECT, 제대로 사용하기</title>
+  <meta name="title" content="SQL SELECT, 제대로 사용하기 :: pageseo" />
+  <meta name="description" Content="" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <link rel="alternate" type="application/rss+xml" title="pageseo" href="https://gngsn.tistory.com/rss" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="https://t1.daumcdn.net/tistory_admin/static/font/AvenirLTStd/AvenirLTStd.css" />
+  <link rel="stylesheet" href="https://t1.daumcdn.net/tistory_admin/static/font/SpoqaHanSans/SpoqaHanSans.css" />
+  <link rel="stylesheet" href="https://t1.daumcdn.net/tistory_admin/static/font/icomoon/icomoon.css" />
+  <link rel="stylesheet" href="https://tistory1.daumcdn.net/tistory/3172059/skin/style.css?_T_=1597492256" />
+  <link rel="stylesheet" href="https://tistory1.daumcdn.net/tistory/3172059/skin/images/slick.css" />
+  <link rel="stylesheet" href="https://tistory1.daumcdn.net/tistory/3172059/skin/images/toc.css" />
+  <link rel="stylesheet" href="./toc-btn.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="https://tistory1.daumcdn.net/tistory/3172059/skin/images/slick.js"></script>
+  <script src="https://tistory1.daumcdn.net/tistory/3172059/skin/images/common.js"></script>
+  <script src="https://unpkg.com/vh-check/dist/vh-check.min.js"></script>
+  <script>
+    (function () {
+      // initialize the test
+      var test = vhCheck();
+    }());
+  </script>
 
-	<link rel="stylesheet" href="https://tistory1.daumcdn.net/tistory/3243776/skin/style.css?_T_=1572232309">
-	<link rel="stylesheet" href="https://tistory1.daumcdn.net/tistory/3243776/skin/images/font.css">
+<style type="text/css">
+		#daumSearchBox {
+			height: 21px;
+			background-image : url(//i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bg_search2_2.gif);
+			margin: 5px auto ;
+			padding: 0;
+		}
+		#daumSearchBox input {
+			background: none;
+			margin : 0;
+			padding : 0;
+			border : 0;
+		}
+		#daumSearchBox #daumLogo {
+			width: 34px;
+			height: 21px;
+			float: left;
+			margin-right: 5px;
+			background-image : url(//i1.daumcdn.net/img-media/tistory/img/bg_search1_2_2010ci.gif);
+		}
+		#daumSearchBox #show_q {
+			background-color: transparent;
+			border: none;
+			font: 12px Gulim, Sans-serif;
+			color: #555;
+			margin-top: 4px;
+			margin-right: 15px;
+			float: left;
+		}
 
-	<!--[if lt IE 9]>
-	<script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-1.12.4.min.js"></script>
-	<![endif]-->
-	<!--[if gte IE 9]><!-->
-	<script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-3.2.1.min.js"></script>
-	<!--<![endif]-->
-	
-	<script data-ad-client="ca-pub-9348951692816238" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-checked-head="true"></script>
-	
-	<meta name="naver-site-verification" content="fef236fe40722fe4ae610e4521714a88ae7d39d5">
-	<meta name="google-site-verification" content="-k7CF5q1PMc-y_PpUnRYVme3oxKA045_s8cQ0t3r4QM">
-
-<link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/assets/blog/7030d16adb598bf18f40d52aa2445c3890b96c04/blogs/plugins/TistoryProfileLayer/style.css?_version_=7030d16adb598bf18f40d52aa2445c3890b96c04">
-<script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/assets/blog/7030d16adb598bf18f40d52aa2445c3890b96c04/blogs/plugins/TistoryProfileLayer/profile.js?_version_=7030d16adb598bf18f40d52aa2445c3890b96c04"></script>
+		#daumSearchBox #show_btn {
+			background-image : url(//i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bt_search_2.gif);
+			width: 37px;
+			height: 21px;
+			float: left;
+			margin:0;
+			cursor:pointer;
+			text-indent:-1000em;
+		}
+	</style>
+<link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/assets/blog/ce07b84ceeff9acb218cdf96ccb5e6a409b92417/blogs/plugins/TistoryProfileLayer/style.css?_version_=ce07b84ceeff9acb218cdf96ccb5e6a409b92417" />
+<script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/assets/blog/ce07b84ceeff9acb218cdf96ccb5e6a409b92417/blogs/plugins/TistoryProfileLayer/profile.js?_version_=ce07b84ceeff9acb218cdf96ccb5e6a409b92417"></script>
 	<style type="text/css">
 		.another_category { border: 1px solid #E5E5E5; padding: 10px 10px 5px; margin:10px 0; clear: both; }
 		.another_category h4 { font-size: 12px !important; margin: 0 !important; border-bottom: 1px solid #E5E5E5 !important; padding: 2px 0 6px !important; }
@@ -127,146 +152,150 @@ lightbox.options.albumLabel = "%1 / %2";
 		.another_category_color_violet h4, .another_category_color_violet h4 a { color: #7E2CB5 !important; }
 	</style>
 <script type="text/javascript">
+        
         window.TistoryBlog = {
             basePath: "",
-            url: "https://www.wbluke.com",
-            tistoryUrl: "https://wbluke.tistory.com",
-			manageUrl: 'https://wbluke.tistory.com/manage',
-            token: 'ueBRsq8jWMxoyks87piTeg=='
+            url: "https://gngsn.tistory.com",
+            tistoryUrl: "https://gngsn.tistory.com",
+			manageUrl: 'https://gngsn.tistory.com/manage',
+            token: '0VbHgOAN+pZ28OL7PeKOXA=='
         };
         var servicePath = "";
         var blogURL = "";
     </script>
 
 	<script> (function() { window.orgjQuery = window.jQuery; window.jQuery = tjQuery })()</script>
-    <script src="https://t1.daumcdn.net/section/uoclike/news/uoclike.min.js"></script>
-	<script> (function() { window.jQuery = window.orgjQuery; delete window.orgjQuery })()</script>
-    <script>
-		(function($) {
-			$.fn.extend({
-				size: function () {
-					return this.length
-				}
-			});
-			$.fn.UOCLike.defaults.updateServiceCategory = true;
-					})(tjQuery)
-    </script>
-        <script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/assets/blog/7030d16adb598bf18f40d52aa2445c3890b96c04/blogs/script/_/base.js?_version_=7030d16adb598bf18f40d52aa2445c3890b96c04"></script>
-        <link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/assets/blog/7030d16adb598bf18f40d52aa2445c3890b96c04/blogs/style/dialog.css?_version_=7030d16adb598bf18f40d52aa2445c3890b96c04">
+    <script type="text/javascript" defer src=https://t1.daumcdn.net/tistory_admin/assets/blog/ce07b84ceeff9acb218cdf96ccb5e6a409b92417/blogs/script/reaction/reaction-button-container.min.js?_version_=ce07b84ceeff9acb218cdf96ccb5e6a409b92417></script>
+    <script> (function() { window.jQuery = window.orgjQuery; delete window.orgjQuery })()</script>
+        <script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/assets/blog/ce07b84ceeff9acb218cdf96ccb5e6a409b92417/blogs/script/_/base.js?_version_=ce07b84ceeff9acb218cdf96ccb5e6a409b92417"></script>
+        <link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/assets/blog/ce07b84ceeff9acb218cdf96ccb5e6a409b92417/blogs/style/dialog.css?_version_=ce07b84ceeff9acb218cdf96ccb5e6a409b92417"/>
             <link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/tistory_admin/www/style/top/font.css">
-    <link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/assets/blog/7030d16adb598bf18f40d52aa2445c3890b96c04/blogs/style/postBtn.css?_version_=7030d16adb598bf18f40d52aa2445c3890b96c04">
-        <link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/assets/blog/7030d16adb598bf18f40d52aa2445c3890b96c04/blogs/style/component/tistory.css?_version_=7030d16adb598bf18f40d52aa2445c3890b96c04">
-        <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script><style type="text/css">#DragSchLayer{display:block;position:absolute;z-index:1000;width:61px;height:31px;margin:-30px 0px 0px -5px;background:url(//search1.daumcdn.net/search/statics/common/pi/btn_drag_rect.png);cursor:pointer}             @media             only screen and (-webkit-min-device-pixel-ratio: 1.5),             only screen and (min-device-pixel-ratio: 1.5),             only screen and (min-resolution: 1.5dppx) {             #DragSchLayer{background-image:url(//search1.daumcdn.net/search/statics/common/pi/r2/btn_drag_rect.png);background-size:61px 31px}}            </style><script type="text/javascript" async="" src="https://m2.daumcdn.net/tiara/js/td.min.js"></script><link rel="preload" href="https://adservice.google.co.kr/adsid/integrator.js?domain=www.wbluke.com" as="script"><script type="text/javascript" src="https://adservice.google.co.kr/adsid/integrator.js?domain=www.wbluke.com"></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=www.wbluke.com" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=www.wbluke.com"></script><link rel="preload" href="https://pagead2.googlesyndication.com/pagead/js/r20191106/r20190131/show_ads_impl.js" as="script"><link rel="stylesheet" type="text/css" href="//m1.daumcdn.net/svc/original/U03/cssjs/uoclike/common/uoclike.min-20150408-2.css"></head>
+    <link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/assets/blog/ce07b84ceeff9acb218cdf96ccb5e6a409b92417/blogs/style/postBtn.css?_version_=ce07b84ceeff9acb218cdf96ccb5e6a409b92417"/>
+        <link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/assets/blog/ce07b84ceeff9acb218cdf96ccb5e6a409b92417/blogs/style/component/tistory.css?_version_=ce07b84ceeff9acb218cdf96ccb5e6a409b92417" />
+        <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script></head>
 
-<body id="tt-body-page" cz-shortcut-listen="true">
-<script type="text/javascript">
+<body id="tt-body-page" class="theme_blue">
+  <script type="text/javascript">
 	(function() {
 		if (!window.T) {
 			window.T = {}
 		}
-		window.T.config = {"TOP_SSL_URL":"https:\/\/www.tistory.com","PREVIEW":false,"ROLE":"owner","PREV_PAGE":"","NEXT_PAGE":"\/17","BLOG":{"isDormancy":false,"title":"\ud568\uaed8 \uc790\ub77c\uae30"},"NEED_COMMENT_LOGIN":false,"COMMENT_LOGIN_CONFIRM_MESSAGE":"","LOGIN_URL":"https:\/\/www.tistory.com\/auth\/login\/?redirectUrl=https%3A%2F%2Fwww.wbluke.com%2F20","DEFAULT_URL":"https:\/\/www.wbluke.com","USER":{"name":"\uc6b0\ube44\ub2c9","homepage":"https:\/\/www.wbluke.com"}};
+		window.T.config = {"TOP_SSL_URL":"https:\/\/www.tistory.com","PREVIEW":false,"ROLE":"owner","PREV_PAGE":"\/48","NEXT_PAGE":"\/46","BLOG":{"isDormancy":false,"title":"pageseo"},"NEED_COMMENT_LOGIN":false,"COMMENT_LOGIN_CONFIRM_MESSAGE":"","LOGIN_URL":"https:\/\/www.tistory.com\/auth\/login\/?redirectUrl=http%3A%2F%2Fgngsn.tistory.com%2F47","DEFAULT_URL":"https:\/\/gngsn.tistory.com","USER":{"name":"gngsn","homepage":"https:\/\/gngsn.tistory.com"},"ROLE_GROUP":"member","SUBSCRIPTION":{"status":"none","isConnected":false,"isProcessing":false,"isPending":false,"isWait":false,"isNone":true},"IS_LOGIN":true,"HAS_BLOG":true,"TOP_URL":"http:\/\/www.tistory.com","JOIN_URL":"https:\/\/www.tistory.com\/member\/join"};
 		window.appInfo = {"domain":"tistory.com","topUrl":"https:\/\/www.tistory.com","loginUrl":"https:\/\/www.tistory.com\/auth\/login","logoutUrl":"https:\/\/www.tistory.com\/auth\/logout"};
 
         window.initData = {};
-                    initData.user = {"id":"3983921","loginId":"pwb0127@gmail.com","name":"\uc6b0\ube44\ub2c9"};
+                    initData.user = {"id":"3815497","loginId":"rudtjs4540@gmail.com","name":"gngsn"};
         
 	})();
 </script>
 
-	<script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/assets/blog/7030d16adb598bf18f40d52aa2445c3890b96c04/blogs/script/owner.js?_version_=7030d16adb598bf18f40d52aa2445c3890b96c04"></script>
-<script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/assets/blog/7030d16adb598bf18f40d52aa2445c3890b96c04/blogs/script/blog/common.js?_version_=7030d16adb598bf18f40d52aa2445c3890b96c04"></script>
+	<script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/assets/blog/ce07b84ceeff9acb218cdf96ccb5e6a409b92417/blogs/script/owner.js?_version_=ce07b84ceeff9acb218cdf96ccb5e6a409b92417"></script>
+<script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/assets/blog/ce07b84ceeff9acb218cdf96ccb5e6a409b92417/blogs/script/blog/common.js?_version_=ce07b84ceeff9acb218cdf96ccb5e6a409b92417"></script>
 <div style="margin:0; padding:0; border:none; background:none; float:none; clear:none; z-index:0"></div>
-	<div id="dkIndex">
-		<a href="#dkBody">본문 바로가기</a>
-		<a href="#dkGnb">메뉴 바로가기</a>
-	</div>
+    <!-- warp / 테마 변경시 theme_pink / theme_blue / theme_green / theme_gray-->
+    <div id="wrap">
 
-	<div id="dkWrap" class="wrap_skin ">
-		<div id="dkHead" role="banner" class="area_head ">
-			<h1 class="screen_out">함께 자라기</h1>
-			<div class="area_profile ">
-				<a class="link_profile" href="/"><img src="https://tistory2.daumcdn.net/tistory/3243776/attach/5b586e2862584b7cbe0756f0ce9788b9" width="50" height="50" class="img_profile" alt="프로필사진"></a>
-				<div class="info_profile">
-					<button type="button" class="btn_name">우비닉
-						<span class="ico_skin ico_name"></span>
-					</button>
-					<ul class="list_name">
-						<li><a href="https://wbluke.tistory.com/manage/entry/post" class="link_name">글쓰기</a></li>
-						<li><a href="https://wbluke.tistory.com/manage" class="link_name">관리</a></li>
-						<li class="box_division"><a href="/tag" class="link_name">태그</a></li>
-						<li><a href="/guestbook" class="link_name">방명록</a></li>
-						<li><a href="https://www.wbluke.com/rss" class="link_name">RSS</a></li>
-					</ul>
-					<p class="txt_condition">함께 자라기</p>
-				</div>
-			</div>
+      <!-- box_header -->
+      <header class="box_header">
+        <h1 class="title_logo">
+          <a href="/" title="pageseo" class="link_logo">
+            
+            
+              pageseo
+            
+          </a>
+        </h1>
 
-			<button type="button" class="btn_menu">
-				<span class="ico_skin ico_menu">카테고리 메뉴열기</span>
-			</button>
-		</div>
+        <!-- <h1 class="title_logo" style="background-image:url('https://tistory1.daumcdn.net/tistory/3172059/skin/images/logo.jpg')"></h1> -->
+        <button class="btn_search"></button>
 
-		<div class="dimmed_layer"></div>
+        <!-- 메뉴 및 검색 버튼 클릭시 area_sidebar / area_popup 논처리 삭제 / body 에 style="overflow:hidden" 추가 -->
+        <button type="button" class="btn_menu" title="메뉴"><span class="blind">메뉴</span></button>
+      </header>
+      <!-- // box_header -->
 
-		<button type="button" class="btn_close">
-			<span class="ico_skin ico_close">닫기</span>
-		</button>
+      <!-- container -->
+      <div id="container">
 
-		<div class="area_menu">
-			
-				<div class="area_search">
-					<button type="button" class="btn_search">
-						<span class="ico_skin ico_search">검색하기</span>
-					</button>
-					<form action="#" method="get" class="frm_search" onsubmit="try{window.location.href='/search/'+looseURIEncode(document.getElementsByName('search')[0].value);document.getElementsByName('search')[0].value='';return false;}catch(e){}">
-						<fieldset>
-							<legend class="screen_out">검색하기 폼</legend>
-							<label for="tfSearch" class="ico_skin lab_search">검색하기</label>
-							<input type="text" name="search" value="" class="tf_search">
-						</fieldset>
-					</form>
-				</div>
-			
+        <!-- area_sidebar -->
+        <aside class="area_sidebar thema_apply" style="display: none;">
 
-			<div role="navigation" class="area_navi">
-				<button type="button" class="btn_cate">CATEGORY <span class="ico_skin ico_cate"></span></button>
+          <div class="inner_sidebar">
+            <div class="sidebar_header">
+              <h1 class="title_logo">
+                <a href="/" title="pageseo" class="link_logo">
+                  
+                  
+                    pageseo
+                  
+                </a>
+              </h1>
+              <button type="button" class="btn_close" title="닫기"><span class="icon-Close"></span></button>
+            </div>
 
-				<div class="list_cate">
-					<ul class="tt_category">
+            <div class="sidebar_contents">
+              <div class="sidebar_menu">
+                
+                    <div class="sidebar_left">
+                      <!-- 카테고리 메뉴 -->
+                      <div class="box_gnb">
+                        <nav>
+                          <ul class="tt_category">
 	<li class="">
 		<a class="link_tit" href="/category">
-			전체보기							<span class="c_cnt">(14)</span>
+			분류 전체보기							<span class="c_cnt">(48)</span>
 			
 					</a>
 
 				<ul class="category_list">
 							<li class="">
-					<a class="link_item" href="/category/%EB%B8%94%EB%A1%9C%EA%B7%B8">
-						블로그													<span class="c_cnt">(2)</span>
+					<a class="link_item" href="/category/IOS">
+						IOS													<span class="c_cnt">(1)</span>
 						
 											</a>
 
 					
 				</li>
 							<li class="">
-					<a class="link_item" href="/category/JPA">
-						JPA													<span class="c_cnt">(2)</span>
+					<a class="link_item" href="/category/GIT">
+						GIT													<span class="c_cnt">(5)</span>
 						
 											</a>
 
 					
 				</li>
 							<li class="">
-					<a class="link_item" href="/category/Spring">
-						Spring													<span class="c_cnt">(8)</span>
+					<a class="link_item" href="/category/SERVER">
+						SERVER													<span class="c_cnt">(28)</span>
 						
 											</a>
 
 										<ul class="sub_category_list">
 													<li class="">
-								<a class="link_sub_item" href="/category/Spring/%ED%86%A0%EB%B9%84%EC%9D%98%20%EC%8A%A4%ED%94%84%EB%A7%81%203.1">
-									토비의 스프링 3.1
-																			<span class="c_cnt">(7)</span>
+								<a class="link_sub_item" href="/category/SERVER/NODE%F0%9F%A7%9A%F0%9F%8F%BB">
+									NODE🧚🏻
+																			<span class="c_cnt">(12)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/SERVER/DENO%F0%9F%A6%95">
+									DENO🦕
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/SERVER/SPRING%F0%9F%8C%BF">
+									SPRING🌿
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/SERVER/DATABASE">
+									DATABASE
+																			<span class="c_cnt">(9)</span>
 									
 																	</a>
 							</li>
@@ -274,8 +303,40 @@ lightbox.options.albumLabel = "%1 / %2";
 					
 				</li>
 							<li class="">
-					<a class="link_item" href="/category/%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4">
-						우아한테크코스													<span class="c_cnt">(2)</span>
+					<a class="link_item" href="/category/LINUX">
+						LINUX													<span class="c_cnt">(1)</span>
+						
+											</a>
+
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/Algorithm">
+						Algorithm													<span class="c_cnt">(9)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/Algorithm/JAVA">
+									JAVA
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Algorithm/BaekJoon">
+									BaekJoon
+																			<span class="c_cnt">(3)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/NOTE">
+						NOTE													<span class="c_cnt">(2)</span>
 						
 											</a>
 
@@ -284,798 +345,764 @@ lightbox.options.albumLabel = "%1 / %2";
 					</ul>
 			</li>
 </ul>
+                        </nav>
+                      </div>
+                  
+                    <!-- 메인 메뉴 -->
+                    <div class="box_gnb">
+                      <ul>		<li class="t_menu_home first">
+			<a href="/">홈</a>
+		</li>
+				<li class="t_menu_tag">
+			<a href="/tag">태그</a>
+		</li>
+				<li class="t_menu_guestbook last">
+			<a href="/guestbook">방명록</a>
+		</li>
+		</ul>
+                    </div>
+              </div>
+              
+                <div class="sidebar_right">
+                  <!-- 링크 -->
+                  <div class="box_sns">
+                    <ul class="list_sns">
+                      
+                    </ul>
+                  </div>
+              
+                <!-- RSS 피드 -->
+                <div class="add_link">
+                  <a href="https://gngsn.tistory.com/rss" target="_blank" class="link_add">RSS 피드</a>
+                </div>
+            </div>
+            
+          </div>
 
-					<ul class="menu_profile">
-						<li><a href="/guestbook">방명록</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+          <!-- 관리 -->
+          <div class="box_tool">
+            <div class="btn-for-guest">
+              <a href="#" class="link_tool" data-action="login">로그인</a>
+            </div>
+            <div class="btn-for-user">
+              <a href="#" class="link_tool" data-action="logout">로그아웃</a>
+              <a href="https://gngsn.tistory.com/manage/entry/post" class="link_tool">글쓰기</a>
+              <a href="https://gngsn.tistory.com/manage" class="link_tool">관리</a>
+            </div>
+          </div>
+      </div>
+    </div>
 
-		<hr class="hide">
+    <div class="dimmed_sidebar"></div>
+    </aside>
 
-		
+    <!-- // area_sidebar -->
 
-		<div id="dkContent" class="cont_skin" role="main">
-			<div id="cMain">
-
-							<div id="toc-elements"></div>
-				
-					<div id="mArticle" class="article_skin">
-
-						
-
-						
-							<div class="skin_view">
-								<h2 id="dkBody" class="screen_out">티스토리 뷰</h2>
-								<div class="area_title">
-									<strong class="tit_category"><a href="/category/Spring/%ED%86%A0%EB%B9%84%EC%9D%98%20%EC%8A%A4%ED%94%84%EB%A7%81%203.1">Spring/토비의 스프링 3.1</a></strong>
-									<h3 class="tit_post"><a href="/20">[토비의 스프링] 6. AOP (2)</a></h3>
-									<span class="txt_detail my_post">우비닉
-										<span class="txt_bar"></span>2019.11.02 17:29
-										
-											<span class="my_edit">
-												<span class="txt_bar"></span><a href="https://wbluke.tistory.com/manage/post/20?returnURL=https%3A%2F%2Fwww.wbluke.com%2F20" class="link_detail">수정</a>
-												<span class="txt_bar"></span><a href="#" onclick="changeVisibility(20, 0); return false;" class="link_detail">공개</a>
-												<span class="txt_bar"></span><a href="#" onclick="deleteEntry(20); return false;" class="link_detail">삭제</a>
-											</span>
-										
-									</span>
-								</div>
-								<div class="area_view">
-									<div class="tt_article_useless_p_margin"><p>이전 글 : <a href="https://www.wbluke.com/17">[토비의 스프링] 6. AOP (1)</a></p>
-<p>&nbsp;</p>
-<p>지금까지 해왔던 작업은 비즈니스 로직에 반복적으로 등장하는 트랜잭션 코드를 투명하게 분리해내는 것이었다. 투명하다는 것은 투명한 유리를 사이에 둔 것처럼, 부가기능을 적용한 후에도 기존 설계와 코드에는 영향을 주지 않고 메소드가 호출되는 과정에 다이내믹하게 참여해서 부가적인 기능을 제공해주도록 만들었다는 것이다.</p>
-<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6">
-
-<h1>테스트 h1 태그1</h1>
-<h2>자동 프록시 생성</h2>
-<h3>자동 프록시 생성 빈 후처리기</h3>
-<h4>자동 프록시 생성 빈 후처리기</h4>
-<p>투명한 부가기능을 적용하는 과정에서 발견됐던 거의 대부분의 문제는 제거했다. 타깃 코드는 깔끔하고, 부가기능은 한 번만 만들어 모든 타깃과 메소드에 재사용이 가능하고, 타깃의 적용 메소드를 선정하는 방식도 독립적으로 작성할 수 있도록 분리되어 있다.</p>
-<p>&nbsp;</p>
-<p>하지만 아직 한 가지 해결할 과제가 남아 있다. 프록시 팩토리 빈 방식의 접근 방법의 한계라고 생각했던 두 가지 문제가 있었다. 그중에서 부가기능이 타깃 오브젝트마다 새로 만들어지는 문제는 스프링 ProxyFactoryBean의 어드바이스를 통해 해결됐다. 남은 것은 부가기능의 적용이 필요한 타깃 오브젝트마다 거의 비슷한 내용의 ProxyFactoryBean 빈 설정정보를 추가해주는 부분이다. 새로운 타깃이 등장할 때마다 비슷한 설정을 매번 복사해주어야 한다. 이런 류의 중복은 어떻게 할까?</p>
-<p>&nbsp;</p>
-<p>스프링은 OCP의 가장 중요한 요소인 유연한 확장이라는 개념을 스프링 컨테이너 자신에게도 다양한 방법으로 적용하고 있다. 스프링은 컨테이너로서 제공하는 기능 중에서 변하지 않는 핵심적인 부분 외에는 대부분 확장할 수 있도록 확장 포인트를 제공하고 있다.</p>
-<p>&nbsp;</p>
-<p>그중에서 관심을 가질 만한 확장 포인트는 바로 BeanPostProcessor 인터페이스를 구현해서 만드는 <code>빈 후처리기</code>다. 빈 후처리기는 이름 그대로 스프링 빈 오브젝트로 만들어지고 난 후에, 빈 오브젝트를 다시 가공할 수 있게 해준다. 그중 <code>DefaultAdvisorAutoProxyCreator</code>는 어드바이저를 이용한 <code>자동 프록시 생성기</code>다. 스프링은 빈 후처리기가 빈으로 등록되어 있으면 빈 오브젝트가 생성될 때마다 빈 후처리기에 보내서 후처리 작업을 요청한다.</p>
-<p>&nbsp;</p>
-<p>이를 잘 이용하면 스프링이 생성하는 빈 오브젝트의 일부를 프록시로 포장하고, 프록시를 빈으로 대신 등록할 수도 있다. 바로 이것이 <code>자동 프록시 생성 빈 후처리기</code>다. DefaultAdvisorAutoProxyCreator는 빈으로 등록된 모든 어드바이저 내의 포인트컷을 이용해 전달받은 빈이 프록시 적용 대상인지 확인한다. 프록시 적용 대상이면 그때는 내장된 프록시 생성기에게 현재 빈에 대한 프록시를 만들게 하고, 만들어진 프록시에 어드바이저를 연결해준다. 컨테이너는 최종적으로 빈 후처리기가 돌려준 오브젝트를 빈으로 등록하고 사용한다.</p>
-<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6">
-<h1>테스트 h1 태그2</h1>
-<h2>포인트컷</h2>
-<h3>확장된 포인트컷</h3>
-<h4>자동 프록시 생성 빈 후처리기</h4>
-<p>한 가지 이상한 점은 지금까지 포인트컷은 부가기능을 적용할 메소드를 판별하는 역할을 수행한다고 했는데, 위에서는 어떤 빈에 프록시를 적용할지를 선택한다고 했던 점이다. 사실 포인트컷은 클래스 필터와 메소드 매처 두 가지를 돌려주는 메소드를 갖고 있다.</p>
-<pre class="cs"><code class="hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title">Pointcut</span> {
-    <span class="hljs-function">ClassFilter <span class="hljs-title">getClassFilter</span>(<span class="hljs-params"></span>)</span>; <span class="hljs-comment">// 프록시를 적용할 클래스인지 확인해준다.</span>
-    <span class="hljs-function">MethodMatcher <span class="hljs-title">getMethodMatcher</span>(<span class="hljs-params"></span>)</span>; <span class="hljs-comment">// 어드바이스를 적용할 메소드인지 확인해준다.</span>
-}</code></pre>
-<p>지금까지는 포인트컷의 메소드 매처만을 사용해 메소드를 선별하는 작업만 해왔던 것이었다. 선정 기능을 모두 사용한다면 먼저 프록시를 적용할 클래스인지 판단하고 나서, 적용 대상 클래스일 경우 어드바이스를 적용할 메소드인지 확인하는 식으로 동작한다.</p>
-<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6">
-<h3>포인트컷 표현식</h3>
-<h4>자동 프록시 생성 빈 후처리기</h4>
-<p>좀 더 편리한 포인트컷 작성 방법을 알아보자.</p>
-<p>&nbsp;</p>
-<p><span style="color: #1b711d;"><b>※ 포인트컷 표현식</b></span></p>
-<p>포인트컷 표현식은 일종의 표현식 언어를 사용해서 포인트컷을 작성할 수 있도록 하는 방법이다. 포인트컷 표현식을 지원하는 포인트컷을 사용하려면 AspectJExpressionPointcut 클래스를 사용하면 된다.</p>
-<p>&nbsp;</p>
-<p>앞서 만들었던 포인트컷은 클래스와 메소드의 이름의 패턴을 독립적으로 비교하도록 만들어져 있다. 하지만 AspectJExpressionPointcut은 클래스와 메소드의 선정 알고리즘을 포인트컷 표현식을 이용해 한 번에 지정할 수 있게 해준다. 사실 스프링이 사용하는 포인트컷 표현식은 AspectJ라는 유명한 프레임워크에서 제공하는 것을 가져와 일부 문법을 확장해서 사용하는 것이다. 그래서 이를 <code>AspectJ 포인트컷 표현식</code>이라고도 한다.</p>
-<p>&nbsp;</p>
-<p>AspectJ 포인트컷 표현식은 <code>포인트컷 지시자</code>를 이용해 작성한다. 포인트컷 지시자 중에서 가장 대표적으로 사용되는 것은 <code>execution()</code>이다. 문법은 다음과 같다.</p>
-<pre class="accesslog"><code class="hljs java">execution([접근제한자 패턴] 타입패턴 [타입패턴.]이름패턴 (타입패턴 | <span class="hljs-string">".."</span>, ...) [<span class="hljs-keyword">throws</span> 예외 패턴])</code></pre>
-<p>문법만 보면 복잡해 보이지만, 사실 메소드의 풀 시그니처를 문자열로 비교한다고 생각하면 쉽다. 다음과 같이 말이다.</p>
-<pre class="stylus"><code class="hljs css"><span class="hljs-selector-tag">public</span> <span class="hljs-selector-tag">int</span> <span class="hljs-selector-tag">springbook</span><span class="hljs-selector-class">.learningtest</span><span class="hljs-selector-class">.spring</span><span class="hljs-selector-class">.pointcut</span><span class="hljs-selector-class">.Target</span><span class="hljs-selector-class">.minus</span>(<span class="hljs-selector-tag">int</span>,<span class="hljs-selector-tag">int</span>) <span class="hljs-selector-tag">throws</span> <span class="hljs-selector-tag">java</span><span class="hljs-selector-class">.lang</span><span class="hljs-selector-class">.RuntimeException</span></code></pre>
-<p>대괄호로 표현한 부분인 접근제한자, 이름패턴에 붙는 타입패턴, 예외 패턴은 생략 가능하고 리턴 타입의 타입패턴, 이름패턴, 파라미터 타입은 필수항목이다. 모든 항목에 대해 적용하고 싶으면 <code>*</code>을 사용한다. 옵션 항목을 생략하면 다음과 같이 간단하게도 사용할 수 있다.</p>
-<pre class="stylus"><code class="hljs cpp">execution(<span class="hljs-keyword">int</span> minus(<span class="hljs-keyword">int</span>,<span class="hljs-keyword">int</span>)) <span class="hljs-comment">// int 타입의 리턴 값, minus라는 메소드 이름, 두 개의 int 파라미터를 가진 모든 메소드를 선정하는 포인트컷 표현식</span>
-execution(* minus(<span class="hljs-keyword">int</span>,<span class="hljs-keyword">int</span>)) <span class="hljs-comment">// 리턴 타입은 상관없이</span>
-execution(* minus(..)) <span class="hljs-comment">// 리턴 타입과 파라미터의 종류, 개수에 상관없이</span>
-execution(* *(..)) <span class="hljs-comment">// 모든 메소드 허용</span></code></pre>
-<p>AspectJ 포인트컷 표현식은 execution() 뿐만 아니라 여러 가지 표현식 스타일을 갖고 있다. 예를 들어 빈의 이름으로 비교하는 bean()도 있고, 다음과 같이 사용하면 @Transactional이라는 애노테이션이 적용된 부분을 가지고 올 수도 있다.</p>
-<pre class="css"><code class="hljs">@<span class="hljs-keyword">annotation</span>(<span class="hljs-keyword">org</span>.<span class="hljs-keyword">springframework</span>.<span class="hljs-keyword">transaction</span>.<span class="hljs-keyword">annotation</span>.<span class="hljs-keyword">Transactional</span>)</code></pre>
-<p>표현식을 사용할 때 주의할 점은 <code>클래스 이름에 적용되는 패턴이 클래스 이름 패턴이 아니라 타입 패턴이라는 것</code>이다. 타입 패턴이 적용된다는 것은 어떤 클래스가 상속 받고 있는 부모 클래스 타입, 혹은 구현한 인터페이스 타입까지도 적용될 수 있다는 것을 의미한다. 쉽게 말해 자식 클래스 혹은 구현 클래스가 부모 타입, 인터페이스 타입을 표현한 표현식에 해당된다는 뜻이다.</p>
-<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6">
-<h1>테스트 h1 태그3</h1>
-<h2>AOP란 무엇인가?</h2>
-<h3>트랜잭션 적용 과정</h3>
-<h4>자동 프록시 생성 빈 후처리기</h4>
-<p>지금까지 UserService에 트랜잭션을 적용해온 과정을 정리해보자.</p>
-<p>&nbsp;</p>
-<p>트랜잭션 경계설정 코드를 비즈니스 로직을 담은 코드에 넣으면서 맞닥뜨린 첫 번째 문제는 <b>특정 트랜잭션 기술에 종속되는 코드가 돼버린다</b>는 것이었다. 그래서 트랜잭션 적용이라는 추상적인 작업 내용은 유지한 채로 구체적인 구현 방법을 자유롭게 바꿀 수 있도록 <code>서비스 추상화 기법을 적용</code>했다.</p>
-<p>&nbsp;</p>
-<p>추상화를 통해 트랜잭션을 어떻게 다룰 것인가는 코드에서 제거했지만, <b>여전히 비즈니스 코드에는 트랜잭션의 잔재가 남아 있었다</b>. 트랜잭션을 어디에 적용할 것인가는 여전히 코드에 노출시켜야 했고, 심지어 대부분의 비즈니스 로직을 담은 메소드에 필요한 기능이었다. 그래서 도입한 것이 바로 <code>DI를 이용해 데코레이터 패턴을 적용하는 방법</code>이었다. 데코레이터 패턴을 적용해서, 비즈니스 로직을 담은 클래스에 코드에는 전혀 영향을 주지 않으면서 트랜잭션 부가기능을 자유롭게 부여했다.</p>
-<p>&nbsp;</p>
-<p>프록시를 이용해서 비즈니스 로직 코드에서 트랜잭션 코드는 모두 제거할 수 있었지만, <b>비즈니스 로직 인터페이스의 모든 메소드마다 트랜잭션 기능을 부여하는 코드를 넣어 프록시 클래스를 만드는 작업이 오히려 큰 짐</b>이 됐다. 그래서 프록시 클래스 없이도 프록시 오브젝트를 런타임 시에 만들어주는 <code>JDK 다이내믹 프록시 기술을 적용</code>했다.</p>
-<p>&nbsp;</p>
-<p><b>트랜잭션 적용 대상이 되는 빈마다 일일이 프록시 팩토리 빈을 설정해줘야 한다는 부담</b>이 남아 있었다. 이를 해결하기 위해 스프링 컨테이너의 <code>빈 생성 후처리 기법을 활용해 컨테이너 초기화 시점에서 자동으로 프록시를 만들어주는 방법을 도입</code>했다. 프록시를 적용할 대상을 일일이 지정하지 않고 패턴을 이용해 자동으로 선정할 수 있도록, <code>클래스를 선정하는 기능을 담은 확장된 포인트컷을 사용</code>했다.</p>
-<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6">
-<h3>AOP, Aspect Oriented Programming</h3>
-<p>트랜잭션 적용 코드는 기존에 써왔던 코드 분리, 관심사의 분리, 인터페이스 도입, DI 등의 방법으로는 간단하게 분리할 수 없었다. 왜냐하면 트랜잭션 경계설정 기능은 <code>다른 모듈의 코드에 부가적으로 부여되는 기능이라는 특징</code>이 있기 때문이다. 그래서 트랜잭션 코드는 한데 모을 수 없고, <code>애플리케이션 전반에 여기저기 흩어져 있다</code>. 따라서 트랜잭션 경계설정 기능을 독립된 모듈로 만들려면 지금까지 적용해온 다이내믹 프록시나 빈 후처리 기술 같은 복잡한 기술이 필요하다.</p>
-<p>&nbsp;</p>
-<p>트랜잭션 같은 부가기능은 핵심기능과 같은 방식으로는 모듈화하기가 매우 힘들다. 이름 그대로 부가기능이기 때문에 <code>스스로는 독립적인 방식으로 존재해서는 적용되기 어렵기 때문</code>이다. 트랜잭션 부가기능이란 트랜잭션 기능을 추가해줄 다른 대상, 즉 타깃이 존재해야만 의미가 있다. 따라서 각 기능을 부가할 대상인 각 타깃의 코드 안에 침투하거나 긴밀하게 연결되어 있지 않으면 안 된다.</p>
-<p>&nbsp;</p>
-<p>결국 지금까지 해온 모든 작업은 <code>핵심기능에 부여되는 부가기능을 효과적으로 모듈화하는 방법</code>을 찾는 것이었고, 어드바이스와 포인트컷을 결합한 어드바이저가 단순하지만 이런 특성을 가진 원시적인 형태로 만들어지게 됐다.</p>
-<p>&nbsp;</p>
-<p>전통적인 객체지향 기술의 설계 방법으로는 독립적인 모듈화가 불가능한 부가기능을 어떻게 모듈화할 것인가를 연구해온 사람들은, 이 부가기능 모듈화 작업은 기존의 객체지향 설계 패러다임과는 구분되는 새로운 특성이 있다고 생각했다. 그래서 이런 부가기능 모듈을 객체지향에서 사용하는 오브젝트와는 다르게 특별한 이름으로 부르기 시작했는데, 그것이 바로 <code>애스펙트(aspect)</code>다. 애스펙트란 그 자체로 애플리케이션의 핵심기능을 담고 있지는 않지만, 애플리케이션을 구성하는 중요한 한 가지 요소이고, 핵심기능에 부가되어 의미를 갖는 특별한 모듈을 가리킨다.</p>
-<p>&nbsp;</p>
-<p>애스펙트는 부가될 기능을 정의한 코드인 어드바이스와, 어드바이스를 어디에 적용할지를 결정하는 포인트컷을 함께 갖고 있다. 애스펙트는 그 단어의 의미대로 <code>애플리케이션을 구성하는 한 가지 측면</code>이라고 생각할 수 있다. 핵심기능 코드 사이에 침투한 부가기능을 독립적인 모듈인 애스펙트로 구분해내면서, 핵심기능은 순수하게 그 기능을 담은 코드로만 존재하고 독립적으로 살펴볼 수 있도록 구분된 면에 존재하게 된 것이다.</p>
-<p>&nbsp;</p>
-<p>이렇게 <b>애플리케이션의 핵심적인 기능에서 부가적인 기능을 분리해서 애스펙트라는 독특한 모듈로 만들어서 설계하고 개발하는 방법</b>을 <code>애스펙트 지향 프로그래밍(Aspect Oriented Programming)</code> 또는 약자로 <code>AOP</code>라고 부른다. AOP는 OOP를 돕는 보조적인 기술이지 OOP를 완전히 대체하는 새로운 개념은 아니다. AOP는 결국 애플리케이션을 다양한 측면에서 독립적으로 모델링하고, 설계하고, 개발할 수 있도록 만들어주는 것이다. 애플리케이션을 특정한 관점을 기준으로 바라볼 수 있게 해준다는 의미에서 AOP를 <code>관점 지향 프로그래밍</code>이라고도 한다.</p>
-<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6">
-<h3>AOP 적용 기술</h3>
-<p>스프링 AOP의 핵심은 <code>프록시</code>를 이용했다는 것이다. 프록시로 만들어서 DI로 연결된 빈 사이에 적용해 타깃의 메소드 호출 과정에 참여해서 부가기능을 제공해주도록 만들었다. 그리고 프록시 방식을 사용했기 때문에 메소드 호출 과정에 참여해서 부가기능을 제공해준다. 따라서 스프링 AOP의 부가기능을 담은 어드바이스가 적용되는 대상은 오브젝트의 메소드다.</p>
-<p>&nbsp;</p>
-<p>독립적으로 개발한 부가기능 모듈을 다양한 타깃에 다이내믹하게 적용해주기 위해 가장 중요한 역할을 맡고 있는 게 바로 프록시다. 그래서 스프링 AOP는 <code>프록시 방식의 AOP</code>라고 할 수 있다.</p>
-<p>&nbsp;</p>
-<p>프록시 방식이 아닌 AOP도 물론 있다. AOP 기술의 원조이자, 가장 강력한 AOP 프레임워크로 불리는 <code>AspectJ</code>는 프록시를 사용하지 않는 대표적인 AOP 기술이다. AspectJ는 프록시처럼 간접적인 방법이 아니라, <code>타깃 오브젝트를 뜯어고쳐서 부가기능을 직접 넣어주는 직접적인 방법</code>을 사용한다. 컴파일된 타깃의 클래스 파일 자체를 수정하거나 클래스가 JVM에 로딩되는 시점을 가로채서 바이트코드를 조작하는 복잡한 방법을 사용하는 것이다. 왜 그런 복잡한 방법을 사용할까?</p>
-<p>&nbsp;</p>
-<p>첫째는 바이트코드를 조작해서 타깃 오브젝트를 직접 수정해버리면 <code>스프링과 같은 DI 컨테이너의 도움을 받아서 자동 프록시 생성 방식을 사용하지 않아도 AOP를 적용할 수 있기 때문</code>이다. 둘째는 프록시 방식보다 훨씬 강력하고 유연한 AOP가 가능하기 때문이다. 프록시 방식의 AOP는 부가기능 부여 대상이 메소드로 한정된다. 하지만 바이트코드를 직접 조작해서 AOP를 적용하면 <code>오브젝트의 생성, 필드 값의 조회와 조작, 스태틱 초기화 등의 다양한 작업에 부가기능을 부여해줄 수 있다</code>.</p>
-<p>&nbsp;</p>
-<p>물론 대부분의 부가기능은 프록시 방식을 사용해 메소드의 호출 시점에 부여하는 것으로 충분하다. 간혹 특별한 요구사항이 생겨서 스프링 AOP의 기능을 넘어서는 기능이 필요하다면, 그때는 AspectJ를 동시에 적용해줄 수도 있다.</p>
-<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6">
-<h3>AOP의 용어</h3>
-<p>AOP에서 많이 사용하는 몇 가지 용어를 살펴보자.</p>
-<p>&nbsp;</p>
-<p><span style="color: #1b711d;"><b>※ 타깃</b></span></p>
-<p>타깃은 부가기능을 부여할 대상이다.</p>
-<p>&nbsp;</p>
-<p><span style="color: #1b711d;"><b>※&nbsp;어드바이스</b></span></p>
-<p>어드바이스는 타깃에게 제공할 부가기능을 담은 모듈이다. 어드바이스는 오브젝트로 정의하기도 하지만 메소드 레벨에서 정의할 수도 있다. 또 메소드 호출 과정에 전반적으로 참여하는 것도 있고, 예외가 발생했을 때만 동작하는 어드바이스처럼 메소드 호출 과정의 일부에서만 동작하는 어드바이스도 있다.</p>
-<p>&nbsp;</p>
-<p><span style="color: #1b711d;"><b>※&nbsp;조인 포인트</b></span></p>
-<p>조인 포인트란 어드바이스가 적용될 수 있는 위치를 말한다. 스프링의 프록시 AOP에서 조인 포인트는 메소드의 실행 단계뿐이다. 타깃 오브젝트가 구현한 인터페이스의 모든 메소드는 조인 포인트가 된다.</p>
-<p>&nbsp;</p>
-<p><span style="color: #1b711d;"><b>※&nbsp;포인트컷</b></span></p>
-<p>포인트컷이란 어드바이스를 적용할 조인 포인트를 선별하는 작업 또는 그 기능을 정의한 모듈을 말한다. 스프링 AOP의 조인 포인트는 메소드의 실행이므로 스프링의 포인트컷은 메소드를 선정하는 기능을 갖고 있다.</p>
-<p>&nbsp;</p>
-<p><span style="color: #1b711d;"><b>※&nbsp;프록시</b></span></p>
-<p>프록시는 클라이언트와 타깃 사이에 투명하게 존재하면서 부가기능을 제공하는 오브젝트다. DI를 통해 타깃 대신 클라이언트에게 주입되며, 클라이언트의 메소드 호출을 대신 받아서 타깃에 위임해주면서, 그 과정에서 부가기능을 부여한다.</p>
-<p>&nbsp;</p>
-<p><span style="color: #1b711d;"><b>※&nbsp;어드바이저</b></span></p>
-<p>어드바이저는 포인트컷과 어드바이스를 하나씩 갖고 있는 오브젝트다. 어드바이저는 어떤 부가기능(어드바이스)을 어디에(포인트컷) 전달할 것인가를 알고 있는 AOP의 가장 기본이 되는 모듈이다. 어드바이저는 스프링 AOP에서만 사용되는 특별한 용어이고, 일반적인 AOP에서는 사용되지 않는다.</p>
-<p>&nbsp;</p>
-<p><span style="color: #1b711d;"><b>※&nbsp;애스펙트</b></span></p>
-<p>OOP의 클래스와 마찬가지로 애스펙트는 AOP의 기본 모듈이다. 한 개 또는 그 이상의 포인트컷과 어드바이스의 조합으로 만들어지며 보통 싱글톤 형태의 오브젝트로 존재한다. 따라서 클래스와 같은 모듈 정의와 오브젝트와 같은 인스턴스의 구분이 특별히 없다. 두 가지 모두 애스펙트라고 불린다.</p>
-<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6">
-<h1>테스트 h1 태그4</h1>
-<h2>트랜잭션 속성</h2>
-<h3>트랜잭션 전파</h3>
-<h4>자동 프록시 생성 빈 후처리기</h4>
-<p>스프링의 트랜잭션 추상화를 설명하면서 그냥 넘어간 부분이 있다. 트랜잭션 매니저에서 트랜잭션을 가져올 때 사용한 DefaultTransactionDefinition 오브젝트다.</p>
-<pre class="aspectj"><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> Object <span class="hljs-title">invoke</span><span class="hljs-params">(MethodInvocation invocation)</span> <span class="hljs-keyword">throws</span> Throwable </span>{
-    TransactionStatus status = <span class="hljs-keyword">this</span>.transactionManager.getTransaction(<span class="hljs-keyword">new</span> DefaultTransactionDefinition());
-    <span class="hljs-keyword">try</span> {
-        Object ret = invocation.proceed();
-        <span class="hljs-keyword">this</span>.transactionManager.commit(status);
-        <span class="hljs-keyword">return</span> ret;
-    } <span class="hljs-keyword">catch</span> (RuntimeException e) {
-        <span class="hljs-keyword">this</span>.transactionManager.rollback(status);
-        <span class="hljs-keyword">throw</span> e;
-    }
-}</code></pre>
-<p>트랜잭션을 가져올 때 파라미터로 트랜잭션 매니저에게 전달하는 DefaultTransactionDefinition의 용도가 무엇인지 알아보자. 트랜잭션이라고 모두 같은 방식으로 동작하는 것은 아니다. DefaultTransactionDefinition이 구현하고 있는 TransactionDefinition 인터페이스는 트랜잭션의 동작방식에 영향을 줄 수 있는 네 가지 속성을 정의하고 있다.</p>
-<p>&nbsp;</p>
-<p><span style="color: #1b711d;"><b>※&nbsp;트랜잭션 전파</b></span></p>
-<p>트랜잭션 전파란 트랜잭션의 경계에서 <code>이미 진행 중인 트랜잭션이 있을 때 또는 없을 때 어떻게 동작할 것인가를 결정하는 방식</code>을 말한다. 트랜잭션 A가 진행되는 도중 트랜잭션 B가 시작되었을 때 어떻게 해줄 것인가에 대한 설정이다. 대표적으로 다음과 같은 트랜잭션 전파 속성을 줄 수 있다.</p>
-<pre class="haml"><code class="hljs diff"><span class="hljs-deletion">- PROPAGATION_REQUIRED : 진행 중인 트랜잭션이 없으면 새로 시작하고, 이미 시작된 트랜잭션이 있으면 이에 참여한다. 가장 많이 사용하고, DefaultTransactionDefinition도 이 속성을 사용한다.</span>
-<span class="hljs-deletion">- PROPAGATION_REQUIRES_NEW : 항상 새로운 트랜잭션을 시작한다.</span>
-<span class="hljs-deletion">- PROPAGATION_NOT_SUPPORTED : 트랜잭션 없이 동작하도록 만든다. 하나의 트랜잭션 내에 여러 메소드 중 특별한 메소드만 트랜잭션 적용에서 제외하려고 할 때 유용하게 쓸 수 있다.</span></code></pre>
-<p>트랜잭션 매니저를 통해 트랜잭션을 시작하려고 할 때 getTransaction()이라는 메소드를 사용하는 이유는 바로 이 트랜잭션 전파 속성이 있기 때문이다. 트랜잭션 전파 속성과 현재 진행 중인 트랜잭션이 존재하는지 여부에 따라서 새로운 트랜잭션을 시작할 수도 있고, 이미 진행 중인 트랜잭션에 참여하기만 할 수도 있다.</p>
-<p>&nbsp;</p>
-<p><span style="color: #1b711d;"><b>※&nbsp;격리 수준</b></span></p>
-<p>모든 DB 트랜잭션은 격리수준을 갖고 있어야 한다. 서버환경에서는 여러 개의 트랜잭션이 동시에 진행될 수 있다. 가능하다면 모든 트랜잭션이 순차적으로 진행돼서 다른 트랜잭션의 작업에 독립적인 것이 좋겠지만, 그러자면 성능이 크게 떨어질 수밖에 없다. 따라서 적절하게 격리수준을 조정해서 <code>가능한 한 많은 트랜잭션을 동시에 진행시키면서도 문제가 발생하지 않게 하는 제어가 필요</code>하다. DefaultTransactionDefinition에 설정된 격리수준은 DataSource에 설정되어 있는 격리수준을 따른다는 뜻의 ISOLATION_DEFAULT다.</p>
-<p>&nbsp;</p>
-<p><span style="color: #1b711d;"><b>※&nbsp;제한시간</b></span></p>
-<p>트랜잭션을 수행하는 제한시간(timeout)을 설정할 수 있다. DefaultTransactionDefinition의 기본 설정은 제한시간이 없는 것이다.</p>
-<p>&nbsp;</p>
-<p><span style="color: #1b711d;"><b>※&nbsp;읽기전용</b></span></p>
-<p>읽기전용으로 설정해두면 트랜잭션 내에서 데이터를 조작하는 시도를 막아줄 수 있다. 또한 데이터 액세스 기술에 따라서 성능이 향상될 수도 있다.</p>
-<p>&nbsp;</p>
-<p>트랜잭션 정의를 수정하려면 어떻게 해야 할까? TransactionDefinition 오브젝트를 생성하고 사용하는 코드는 트랜잭션 경계설정 기능을 가진 TransactionAdvice다. DefaultTransactionDefinition을 사용하는 대신 외부에서 정의된 TransactionDefinition 오브젝트를 DI 받아서 사용하도록 만들면 된다. 하지만 이 방법으로 트랜잭션 속성을 변경하면 TransactionAdvice를 사용하는 모든 트랜잭션의 속성이 한꺼번에 바뀐다는 문제가 잇다. <code>원하는 메소드만 선택해서 독자적인 트랜잭션 정의를 적용할 수 있는 방법은 없을까?</code></p>
-<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6">
-<h3>트랜잭션 인터셉터</h3>
-<p>메소드별로 다른 트랜잭션 정의를 적용하려면 어드바이스의 기능을 확장해야 한다. 스프링에는 편리하게 트랜잭션 경계설정 어드바이스로 사용할 수 있도록 만들어진 TransactionInterceptor가 존재한다. TransactionInterceptor 어드바이스의 동작방식은 기존의 TransactionAdvice와 크게 다르지 않고, 다만 트랜잭션 정의를 메소드 이름 패턴을 이용해서 다르게 지정할 수 있는 방법을 추가로 제공해줄 뿐이다.</p>
-<p>&nbsp;</p>
-<p>TransactionInterceptor의 두 번째 프로퍼티는 Properties 타입의 transactionAttributes인데, 트랜잭션 속성을 정의한 프로퍼티다. 트랜잭션 속성은 TransactionDefinition의 네 가지 기본 항목에 rollbackOn()이라는 메소드를 하나 더 갖고 있는 TransactionAttribute 인터페이스로 정의된다. rollbackOn()은 어떤 예외가 발생하면 롤백을 할 것인가를 결정하는 메소드다. 이 TransactionAttribute를 이용하면 트랜잭션 부가기능의 동작 방식을 모두 제어할 수 있다.</p>
-<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6">
-<h3>트랜잭션 애노테이션</h3>
-<p>포인트컷 표현식과 트랜잭션 속성을 이용해 트랜잭션을 일괄적으로 적용하는 방식은 대부분의 상황에 잘 들어맞는다. 그런데 가끔은 클래스나 메소드에 따라 각각 다른 트랜잭션 속성을 적용해야 하는 경우도 있다. 그런 경우를 위해 직접 타깃에 트랜잭션 속성정보를 가진 애노테이션을 지정하는 방법이 있다. <code>@Transactional</code> 애노테이션의 정의는 다음과 같다.</p>
-<pre class="java"><code class="hljs"><span class="hljs-keyword">package</span> org.springframework.transaction.annotation;
-
-<span class="hljs-meta">@Target</span>({ElementType.METHOD, ElementType.TYPE}) <span class="hljs-comment">// 애노테이션을 사용할 대상 지정. 메소드와 타입(클래스, 인터페이스)</span>
-<span class="hljs-meta">@Retention</span>(RetentionPolicy.RUNTIME) <span class="hljs-comment">// 애노테이션 정보가 언제까지 유지되는지를 지정. 런타임 때도 애노테이션 정보를 리플렉션을 통해 얻을 수 있다.</span>
-<span class="hljs-meta">@Inherited</span> <span class="hljs-comment">// 상속을 통해서도 애노테이션 정보를 얻을 수 있게 한다.</span>
-<span class="hljs-meta">@Documented</span>
-<span class="hljs-keyword">public</span> <span class="hljs-meta">@interface</span> Transactional { <span class="hljs-comment">// 트랜잭션 속성의 모든 항목을 엘리먼트로 지정할 수 있다.</span>
-    <span class="hljs-function">String <span class="hljs-title">value</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> ""</span>;
-    <span class="hljs-function">Propagation <span class="hljs-title">propagation</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> Propagation.REQUIRED</span>;
-    <span class="hljs-function">Isolation <span class="hljs-title">isolation</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> Isolation.DEFAULT</span>;
-    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">timeout</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> TransactionDefinition.TIMEOUT_DEFAULT</span>;
-    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">readOnly</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">false</span></span>;
-    Class&lt;? extends Throwable&gt;[] rollbackFor() <span class="hljs-keyword">default</span> {};
-    String[] rollbackForClassName() <span class="hljs-keyword">default</span> {};
-    Class&lt;? extends Throwable&gt;[] noRollbackFor() <span class="hljs-keyword">default</span> {};
-    String[] noRollbackForClassName() <span class="hljs-keyword">default</span> {};
-}</code></pre>
-<p>스프링은 @Transactional을 적용할 때 4단계의 대체(fallback) 정책을 이용하게 해준다. 메소드의 속성을 확인할 때 <code>타깃 메소드, 타깃 클래스, 선언 메소드, 선언 타입(클래스, 인터페이스)의 순서에 따라서 @Transactional이 적용됐는지 차례로 확인하고, 가장 먼저 발견되는 속성정보를 사용하게 하는 방법</code>이다.</p>
-<p>&nbsp;</p>
-<p>다음과 같이 사용할 수 있다.</p>
-<pre class="java"><code class="hljs"><span class="hljs-meta">@Transactional</span>
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">UserService</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(User user)</span></span>;
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">deleteAll</span><span class="hljs-params">()</span></span>;
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">update</span><span class="hljs-params">(User user)</span></span>;
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">upgradeLevels</span><span class="hljs-params">()</span></span>;
-
-    <span class="hljs-meta">@Transactional</span>(readOnly=<span class="hljs-keyword">true</span>) <span class="hljs-comment">// 메소드 단위로 부여된 트랜잭션 속성이 타입 레벨에 부여된 것보다 우선한다.</span>
-    <span class="hljs-function">User <span class="hljs-title">get</span><span class="hljs-params">(String id)</span></span>;
-
-    <span class="hljs-meta">@Transactional</span>(readOnly=<span class="hljs-keyword">true</span>)
-    <span class="hljs-function">List&lt;User&gt; <span class="hljs-title">getAll</span><span class="hljs-params">()</span></span>;
-}</code></pre>
-<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6">
-<h3>테스트를 위한 트랜잭션 애노테이션</h3>
-<p>테스트에도 @Transactional을 적용할 수 있다. 테스트 클래스 또는 메소드에 @Transactional 애노테이션을 부여해주면 마치 타깃 클래스나 인터페이스에 적용된 것처럼 테스트 메소드에 트랜잭션 경계가 자동으로 설정된다. 하지만 중요한 차이점이 있는데, <code>테스트용 트랜잭션은 테스트가 끝나면 자동으로 롤백된다</code>는 것이다. 테스트에 적용된 @Transactional은 기본적으로 트랜잭션을 강제 롤백시키도록 설정되어 있다. @Transactional을 지정해주면 롤백 테스트가 되는 것이다.</p>
-<p>&nbsp;</p>
-<p>그런데 테스트 메소드 안에서 진행되는 작업을 하나의 트랜잭션으로 묶고 싶기는 하지만 강제 롤백을 원하지 않을 수도 있다. 이럴 때는 <code>@Rollback</code>이라는 애노테이션을 적용하면 된다. @Rollback은 롤백 여부를 지정하는 값을 갖고 있다. @Rollback의 기본 값은 true다. 따라서 <code>트랜잭션은 적용되지만 롤백을 원치 않는다면 @Rollback(false)</code>라고 해줘야 한다.</p>
-<p>&nbsp;</p>
-<p>@Rollback은 메소드 레벨에서만 적용되기 때문에 모든 메소드에 해당 설정을 주려면 <code>@TransactionConfiguration(defaultRollback=false)</code>를 사용해야 한다. 이 애노테이션은 클래스 레벨에 부여할 수 있다.</p>
-<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6">
-
-
-<h1>테스트 h1 태그4</h1>
-<h2>트랜잭션 속성</h2>
-<h3>트랜잭션 전파</h3>
-<p>스프링의 트랜잭션 추상화를 설명하면서 그냥 넘어간 부분이 있다. 트랜잭션 매니저에서 트랜잭션을 가져올 때 사용한 DefaultTransactionDefinition 오브젝트다.</p>
-<pre class="aspectj"><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> Object <span class="hljs-title">invoke</span><span class="hljs-params">(MethodInvocation invocation)</span> <span class="hljs-keyword">throws</span> Throwable </span>{
-    TransactionStatus status = <span class="hljs-keyword">this</span>.transactionManager.getTransaction(<span class="hljs-keyword">new</span> DefaultTransactionDefinition());
-    <span class="hljs-keyword">try</span> {
-        Object ret = invocation.proceed();
-        <span class="hljs-keyword">this</span>.transactionManager.commit(status);
-        <span class="hljs-keyword">return</span> ret;
-    } <span class="hljs-keyword">catch</span> (RuntimeException e) {
-        <span class="hljs-keyword">this</span>.transactionManager.rollback(status);
-        <span class="hljs-keyword">throw</span> e;
-    }
-}</code></pre>
-<p>트랜잭션을 가져올 때 파라미터로 트랜잭션 매니저에게 전달하는 DefaultTransactionDefinition의 용도가 무엇인지 알아보자. 트랜잭션이라고 모두 같은 방식으로 동작하는 것은 아니다. DefaultTransactionDefinition이 구현하고 있는 TransactionDefinition 인터페이스는 트랜잭션의 동작방식에 영향을 줄 수 있는 네 가지 속성을 정의하고 있다.</p>
-<p>&nbsp;</p>
-<p><span style="color: #1b711d;"><b>※&nbsp;트랜잭션 전파</b></span></p>
-<p>트랜잭션 전파란 트랜잭션의 경계에서 <code>이미 진행 중인 트랜잭션이 있을 때 또는 없을 때 어떻게 동작할 것인가를 결정하는 방식</code>을 말한다. 트랜잭션 A가 진행되는 도중 트랜잭션 B가 시작되었을 때 어떻게 해줄 것인가에 대한 설정이다. 대표적으로 다음과 같은 트랜잭션 전파 속성을 줄 수 있다.</p>
-<pre class="haml"><code class="hljs diff"><span class="hljs-deletion">- PROPAGATION_REQUIRED : 진행 중인 트랜잭션이 없으면 새로 시작하고, 이미 시작된 트랜잭션이 있으면 이에 참여한다. 가장 많이 사용하고, DefaultTransactionDefinition도 이 속성을 사용한다.</span>
-<span class="hljs-deletion">- PROPAGATION_REQUIRES_NEW : 항상 새로운 트랜잭션을 시작한다.</span>
-<span class="hljs-deletion">- PROPAGATION_NOT_SUPPORTED : 트랜잭션 없이 동작하도록 만든다. 하나의 트랜잭션 내에 여러 메소드 중 특별한 메소드만 트랜잭션 적용에서 제외하려고 할 때 유용하게 쓸 수 있다.</span></code></pre>
-<p>트랜잭션 매니저를 통해 트랜잭션을 시작하려고 할 때 getTransaction()이라는 메소드를 사용하는 이유는 바로 이 트랜잭션 전파 속성이 있기 때문이다. 트랜잭션 전파 속성과 현재 진행 중인 트랜잭션이 존재하는지 여부에 따라서 새로운 트랜잭션을 시작할 수도 있고, 이미 진행 중인 트랜잭션에 참여하기만 할 수도 있다.</p>
-<p>&nbsp;</p>
-<p><span style="color: #1b711d;"><b>※&nbsp;격리 수준</b></span></p>
-<p>모든 DB 트랜잭션은 격리수준을 갖고 있어야 한다. 서버환경에서는 여러 개의 트랜잭션이 동시에 진행될 수 있다. 가능하다면 모든 트랜잭션이 순차적으로 진행돼서 다른 트랜잭션의 작업에 독립적인 것이 좋겠지만, 그러자면 성능이 크게 떨어질 수밖에 없다. 따라서 적절하게 격리수준을 조정해서 <code>가능한 한 많은 트랜잭션을 동시에 진행시키면서도 문제가 발생하지 않게 하는 제어가 필요</code>하다. DefaultTransactionDefinition에 설정된 격리수준은 DataSource에 설정되어 있는 격리수준을 따른다는 뜻의 ISOLATION_DEFAULT다.</p>
-<p>&nbsp;</p>
-<p><span style="color: #1b711d;"><b>※&nbsp;제한시간</b></span></p>
-<p>트랜잭션을 수행하는 제한시간(timeout)을 설정할 수 있다. DefaultTransactionDefinition의 기본 설정은 제한시간이 없는 것이다.</p>
-<p>&nbsp;</p>
-<p><span style="color: #1b711d;"><b>※&nbsp;읽기전용</b></span></p>
-<p>읽기전용으로 설정해두면 트랜잭션 내에서 데이터를 조작하는 시도를 막아줄 수 있다. 또한 데이터 액세스 기술에 따라서 성능이 향상될 수도 있다.</p>
-<p>&nbsp;</p>
-<p>트랜잭션 정의를 수정하려면 어떻게 해야 할까? TransactionDefinition 오브젝트를 생성하고 사용하는 코드는 트랜잭션 경계설정 기능을 가진 TransactionAdvice다. DefaultTransactionDefinition을 사용하는 대신 외부에서 정의된 TransactionDefinition 오브젝트를 DI 받아서 사용하도록 만들면 된다. 하지만 이 방법으로 트랜잭션 속성을 변경하면 TransactionAdvice를 사용하는 모든 트랜잭션의 속성이 한꺼번에 바뀐다는 문제가 잇다. <code>원하는 메소드만 선택해서 독자적인 트랜잭션 정의를 적용할 수 있는 방법은 없을까?</code></p>
-<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6">
-<h3>트랜잭션 인터셉터</h3>
-<p>메소드별로 다른 트랜잭션 정의를 적용하려면 어드바이스의 기능을 확장해야 한다. 스프링에는 편리하게 트랜잭션 경계설정 어드바이스로 사용할 수 있도록 만들어진 TransactionInterceptor가 존재한다. TransactionInterceptor 어드바이스의 동작방식은 기존의 TransactionAdvice와 크게 다르지 않고, 다만 트랜잭션 정의를 메소드 이름 패턴을 이용해서 다르게 지정할 수 있는 방법을 추가로 제공해줄 뿐이다.</p>
-<p>&nbsp;</p>
-<p>TransactionInterceptor의 두 번째 프로퍼티는 Properties 타입의 transactionAttributes인데, 트랜잭션 속성을 정의한 프로퍼티다. 트랜잭션 속성은 TransactionDefinition의 네 가지 기본 항목에 rollbackOn()이라는 메소드를 하나 더 갖고 있는 TransactionAttribute 인터페이스로 정의된다. rollbackOn()은 어떤 예외가 발생하면 롤백을 할 것인가를 결정하는 메소드다. 이 TransactionAttribute를 이용하면 트랜잭션 부가기능의 동작 방식을 모두 제어할 수 있다.</p>
-<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6">
-<h3>트랜잭션 애노테이션</h3>
-<p>포인트컷 표현식과 트랜잭션 속성을 이용해 트랜잭션을 일괄적으로 적용하는 방식은 대부분의 상황에 잘 들어맞는다. 그런데 가끔은 클래스나 메소드에 따라 각각 다른 트랜잭션 속성을 적용해야 하는 경우도 있다. 그런 경우를 위해 직접 타깃에 트랜잭션 속성정보를 가진 애노테이션을 지정하는 방법이 있다. <code>@Transactional</code> 애노테이션의 정의는 다음과 같다.</p>
-<pre class="java"><code class="hljs"><span class="hljs-keyword">package</span> org.springframework.transaction.annotation;
-
-<span class="hljs-meta">@Target</span>({ElementType.METHOD, ElementType.TYPE}) <span class="hljs-comment">// 애노테이션을 사용할 대상 지정. 메소드와 타입(클래스, 인터페이스)</span>
-<span class="hljs-meta">@Retention</span>(RetentionPolicy.RUNTIME) <span class="hljs-comment">// 애노테이션 정보가 언제까지 유지되는지를 지정. 런타임 때도 애노테이션 정보를 리플렉션을 통해 얻을 수 있다.</span>
-<span class="hljs-meta">@Inherited</span> <span class="hljs-comment">// 상속을 통해서도 애노테이션 정보를 얻을 수 있게 한다.</span>
-<span class="hljs-meta">@Documented</span>
-<span class="hljs-keyword">public</span> <span class="hljs-meta">@interface</span> Transactional { <span class="hljs-comment">// 트랜잭션 속성의 모든 항목을 엘리먼트로 지정할 수 있다.</span>
-    <span class="hljs-function">String <span class="hljs-title">value</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> ""</span>;
-    <span class="hljs-function">Propagation <span class="hljs-title">propagation</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> Propagation.REQUIRED</span>;
-    <span class="hljs-function">Isolation <span class="hljs-title">isolation</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> Isolation.DEFAULT</span>;
-    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">timeout</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> TransactionDefinition.TIMEOUT_DEFAULT</span>;
-    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">readOnly</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">false</span></span>;
-    Class&lt;? extends Throwable&gt;[] rollbackFor() <span class="hljs-keyword">default</span> {};
-    String[] rollbackForClassName() <span class="hljs-keyword">default</span> {};
-    Class&lt;? extends Throwable&gt;[] noRollbackFor() <span class="hljs-keyword">default</span> {};
-    String[] noRollbackForClassName() <span class="hljs-keyword">default</span> {};
-}</code></pre>
-<p>스프링은 @Transactional을 적용할 때 4단계의 대체(fallback) 정책을 이용하게 해준다. 메소드의 속성을 확인할 때 <code>타깃 메소드, 타깃 클래스, 선언 메소드, 선언 타입(클래스, 인터페이스)의 순서에 따라서 @Transactional이 적용됐는지 차례로 확인하고, 가장 먼저 발견되는 속성정보를 사용하게 하는 방법</code>이다.</p>
-<p>&nbsp;</p>
-<p>다음과 같이 사용할 수 있다.</p>
-<pre class="java"><code class="hljs"><span class="hljs-meta">@Transactional</span>
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">UserService</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(User user)</span></span>;
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">deleteAll</span><span class="hljs-params">()</span></span>;
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">update</span><span class="hljs-params">(User user)</span></span>;
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">upgradeLevels</span><span class="hljs-params">()</span></span>;
-
-    <span class="hljs-meta">@Transactional</span>(readOnly=<span class="hljs-keyword">true</span>) <span class="hljs-comment">// 메소드 단위로 부여된 트랜잭션 속성이 타입 레벨에 부여된 것보다 우선한다.</span>
-    <span class="hljs-function">User <span class="hljs-title">get</span><span class="hljs-params">(String id)</span></span>;
-
-    <span class="hljs-meta">@Transactional</span>(readOnly=<span class="hljs-keyword">true</span>)
-    <span class="hljs-function">List&lt;User&gt; <span class="hljs-title">getAll</span><span class="hljs-params">()</span></span>;
-}</code></pre>
-<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6">
-<h3>테스트를 위한 트랜잭션 애노테이션</h3>
-<h1>테스트 h1 태그4</h1>
-<h2>트랜잭션 속성</h2>
-<h3>트랜잭션 전파</h3>
-<p>스프링의 트랜잭션 추상화를 설명하면서 그냥 넘어간 부분이 있다. 트랜잭션 매니저에서 트랜잭션을 가져올 때 사용한 DefaultTransactionDefinition 오브젝트다.</p>
-<pre class="aspectj"><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> Object <span class="hljs-title">invoke</span><span class="hljs-params">(MethodInvocation invocation)</span> <span class="hljs-keyword">throws</span> Throwable </span>{
-    TransactionStatus status = <span class="hljs-keyword">this</span>.transactionManager.getTransaction(<span class="hljs-keyword">new</span> DefaultTransactionDefinition());
-    <span class="hljs-keyword">try</span> {
-        Object ret = invocation.proceed();
-        <span class="hljs-keyword">this</span>.transactionManager.commit(status);
-        <span class="hljs-keyword">return</span> ret;
-    } <span class="hljs-keyword">catch</span> (RuntimeException e) {
-        <span class="hljs-keyword">this</span>.transactionManager.rollback(status);
-        <span class="hljs-keyword">throw</span> e;
-    }
-}</code></pre>
-<p>트랜잭션을 가져올 때 파라미터로 트랜잭션 매니저에게 전달하는 DefaultTransactionDefinition의 용도가 무엇인지 알아보자. 트랜잭션이라고 모두 같은 방식으로 동작하는 것은 아니다. DefaultTransactionDefinition이 구현하고 있는 TransactionDefinition 인터페이스는 트랜잭션의 동작방식에 영향을 줄 수 있는 네 가지 속성을 정의하고 있다.</p>
-<p>&nbsp;</p>
-<p><span style="color: #1b711d;"><b>※&nbsp;트랜잭션 전파</b></span></p>
-<p>트랜잭션 전파란 트랜잭션의 경계에서 <code>이미 진행 중인 트랜잭션이 있을 때 또는 없을 때 어떻게 동작할 것인가를 결정하는 방식</code>을 말한다. 트랜잭션 A가 진행되는 도중 트랜잭션 B가 시작되었을 때 어떻게 해줄 것인가에 대한 설정이다. 대표적으로 다음과 같은 트랜잭션 전파 속성을 줄 수 있다.</p>
-<pre class="haml"><code class="hljs diff"><span class="hljs-deletion">- PROPAGATION_REQUIRED : 진행 중인 트랜잭션이 없으면 새로 시작하고, 이미 시작된 트랜잭션이 있으면 이에 참여한다. 가장 많이 사용하고, DefaultTransactionDefinition도 이 속성을 사용한다.</span>
-<span class="hljs-deletion">- PROPAGATION_REQUIRES_NEW : 항상 새로운 트랜잭션을 시작한다.</span>
-<span class="hljs-deletion">- PROPAGATION_NOT_SUPPORTED : 트랜잭션 없이 동작하도록 만든다. 하나의 트랜잭션 내에 여러 메소드 중 특별한 메소드만 트랜잭션 적용에서 제외하려고 할 때 유용하게 쓸 수 있다.</span></code></pre>
-<p>트랜잭션 매니저를 통해 트랜잭션을 시작하려고 할 때 getTransaction()이라는 메소드를 사용하는 이유는 바로 이 트랜잭션 전파 속성이 있기 때문이다. 트랜잭션 전파 속성과 현재 진행 중인 트랜잭션이 존재하는지 여부에 따라서 새로운 트랜잭션을 시작할 수도 있고, 이미 진행 중인 트랜잭션에 참여하기만 할 수도 있다.</p>
-<p>&nbsp;</p>
-<p><span style="color: #1b711d;"><b>※&nbsp;격리 수준</b></span></p>
-<p>모든 DB 트랜잭션은 격리수준을 갖고 있어야 한다. 서버환경에서는 여러 개의 트랜잭션이 동시에 진행될 수 있다. 가능하다면 모든 트랜잭션이 순차적으로 진행돼서 다른 트랜잭션의 작업에 독립적인 것이 좋겠지만, 그러자면 성능이 크게 떨어질 수밖에 없다. 따라서 적절하게 격리수준을 조정해서 <code>가능한 한 많은 트랜잭션을 동시에 진행시키면서도 문제가 발생하지 않게 하는 제어가 필요</code>하다. DefaultTransactionDefinition에 설정된 격리수준은 DataSource에 설정되어 있는 격리수준을 따른다는 뜻의 ISOLATION_DEFAULT다.</p>
-<p>&nbsp;</p>
-<p><span style="color: #1b711d;"><b>※&nbsp;제한시간</b></span></p>
-<p>트랜잭션을 수행하는 제한시간(timeout)을 설정할 수 있다. DefaultTransactionDefinition의 기본 설정은 제한시간이 없는 것이다.</p>
-<p>&nbsp;</p>
-<p><span style="color: #1b711d;"><b>※&nbsp;읽기전용</b></span></p>
-<p>읽기전용으로 설정해두면 트랜잭션 내에서 데이터를 조작하는 시도를 막아줄 수 있다. 또한 데이터 액세스 기술에 따라서 성능이 향상될 수도 있다.</p>
-<p>&nbsp;</p>
-<p>트랜잭션 정의를 수정하려면 어떻게 해야 할까? TransactionDefinition 오브젝트를 생성하고 사용하는 코드는 트랜잭션 경계설정 기능을 가진 TransactionAdvice다. DefaultTransactionDefinition을 사용하는 대신 외부에서 정의된 TransactionDefinition 오브젝트를 DI 받아서 사용하도록 만들면 된다. 하지만 이 방법으로 트랜잭션 속성을 변경하면 TransactionAdvice를 사용하는 모든 트랜잭션의 속성이 한꺼번에 바뀐다는 문제가 잇다. <code>원하는 메소드만 선택해서 독자적인 트랜잭션 정의를 적용할 수 있는 방법은 없을까?</code></p>
-<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6">
-<h3>트랜잭션 인터셉터</h3>
-<p>메소드별로 다른 트랜잭션 정의를 적용하려면 어드바이스의 기능을 확장해야 한다. 스프링에는 편리하게 트랜잭션 경계설정 어드바이스로 사용할 수 있도록 만들어진 TransactionInterceptor가 존재한다. TransactionInterceptor 어드바이스의 동작방식은 기존의 TransactionAdvice와 크게 다르지 않고, 다만 트랜잭션 정의를 메소드 이름 패턴을 이용해서 다르게 지정할 수 있는 방법을 추가로 제공해줄 뿐이다.</p>
-<p>&nbsp;</p>
-<p>TransactionInterceptor의 두 번째 프로퍼티는 Properties 타입의 transactionAttributes인데, 트랜잭션 속성을 정의한 프로퍼티다. 트랜잭션 속성은 TransactionDefinition의 네 가지 기본 항목에 rollbackOn()이라는 메소드를 하나 더 갖고 있는 TransactionAttribute 인터페이스로 정의된다. rollbackOn()은 어떤 예외가 발생하면 롤백을 할 것인가를 결정하는 메소드다. 이 TransactionAttribute를 이용하면 트랜잭션 부가기능의 동작 방식을 모두 제어할 수 있다.</p>
-<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6">
-<h3>트랜잭션 애노테이션</h3>
-<p>포인트컷 표현식과 트랜잭션 속성을 이용해 트랜잭션을 일괄적으로 적용하는 방식은 대부분의 상황에 잘 들어맞는다. 그런데 가끔은 클래스나 메소드에 따라 각각 다른 트랜잭션 속성을 적용해야 하는 경우도 있다. 그런 경우를 위해 직접 타깃에 트랜잭션 속성정보를 가진 애노테이션을 지정하는 방법이 있다. <code>@Transactional</code> 애노테이션의 정의는 다음과 같다.</p>
-<pre class="java"><code class="hljs"><span class="hljs-keyword">package</span> org.springframework.transaction.annotation;
-
-<span class="hljs-meta">@Target</span>({ElementType.METHOD, ElementType.TYPE}) <span class="hljs-comment">// 애노테이션을 사용할 대상 지정. 메소드와 타입(클래스, 인터페이스)</span>
-<span class="hljs-meta">@Retention</span>(RetentionPolicy.RUNTIME) <span class="hljs-comment">// 애노테이션 정보가 언제까지 유지되는지를 지정. 런타임 때도 애노테이션 정보를 리플렉션을 통해 얻을 수 있다.</span>
-<span class="hljs-meta">@Inherited</span> <span class="hljs-comment">// 상속을 통해서도 애노테이션 정보를 얻을 수 있게 한다.</span>
-<span class="hljs-meta">@Documented</span>
-<span class="hljs-keyword">public</span> <span class="hljs-meta">@interface</span> Transactional { <span class="hljs-comment">// 트랜잭션 속성의 모든 항목을 엘리먼트로 지정할 수 있다.</span>
-    <span class="hljs-function">String <span class="hljs-title">value</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> ""</span>;
-    <span class="hljs-function">Propagation <span class="hljs-title">propagation</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> Propagation.REQUIRED</span>;
-    <span class="hljs-function">Isolation <span class="hljs-title">isolation</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> Isolation.DEFAULT</span>;
-    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">timeout</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> TransactionDefinition.TIMEOUT_DEFAULT</span>;
-    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">readOnly</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">false</span></span>;
-    Class&lt;? extends Throwable&gt;[] rollbackFor() <span class="hljs-keyword">default</span> {};
-    String[] rollbackForClassName() <span class="hljs-keyword">default</span> {};
-    Class&lt;? extends Throwable&gt;[] noRollbackFor() <span class="hljs-keyword">default</span> {};
-    String[] noRollbackForClassName() <span class="hljs-keyword">default</span> {};
-}</code></pre>
-<p>스프링은 @Transactional을 적용할 때 4단계의 대체(fallback) 정책을 이용하게 해준다. 메소드의 속성을 확인할 때 <code>타깃 메소드, 타깃 클래스, 선언 메소드, 선언 타입(클래스, 인터페이스)의 순서에 따라서 @Transactional이 적용됐는지 차례로 확인하고, 가장 먼저 발견되는 속성정보를 사용하게 하는 방법</code>이다.</p>
-<p>&nbsp;</p>
-<p>다음과 같이 사용할 수 있다.</p>
-<pre class="java"><code class="hljs"><span class="hljs-meta">@Transactional</span>
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">UserService</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(User user)</span></span>;
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">deleteAll</span><span class="hljs-params">()</span></span>;
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">update</span><span class="hljs-params">(User user)</span></span>;
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">upgradeLevels</span><span class="hljs-params">()</span></span>;
-
-    <span class="hljs-meta">@Transactional</span>(readOnly=<span class="hljs-keyword">true</span>) <span class="hljs-comment">// 메소드 단위로 부여된 트랜잭션 속성이 타입 레벨에 부여된 것보다 우선한다.</span>
-    <span class="hljs-function">User <span class="hljs-title">get</span><span class="hljs-params">(String id)</span></span>;
-
-    <span class="hljs-meta">@Transactional</span>(readOnly=<span class="hljs-keyword">true</span>)
-    <span class="hljs-function">List&lt;User&gt; <span class="hljs-title">getAll</span><span class="hljs-params">()</span></span>;
-}</code></pre>
-<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6">
-<h3>테스트를 위한 트랜잭션 애노테이션</h3>
-
-<h3>참고</h3>
-<p><a href="http://acornpub.co.kr/book/toby-spring3.1-vol1">http://acornpub.co.kr/book/toby-spring3.1-vol1</a></p>
-<figure id="og_1572178475431" contenteditable="false" data-ke-type="opengraph" data-og-type="book" data-og-title="토비의 스프링 3.1 Vol. 1 스프링의 이해와 원리" data-og-description="스프링의 핵심 프로그래밍 모델의 원리와 이에 적용된 다양한 디자인 패턴, 프로그래밍 기법의 이해를 돕는 책" data-og-host="www.acornpub.co.kr" data-og-source-url="http://acornpub.co.kr/book/toby-spring3.1-vol1" data-og-url="http://www.acornpub.co.kr/book/toby-spring3.1-vol1" data-og-image="https://scrap.kakaocdn.net/dn/tSF55/hyDqiuXbBd/gMBkkqSd9aj0QuYOQWrlzk/img.jpg?width=458&amp;height=621&amp;face=0_0_458_621,https://scrap.kakaocdn.net/dn/5DesY/hyDqnC1nRA/ZOH9vFpLyClsf8AikKkEu0/img.png?width=258&amp;height=350&amp;face=0_0_258_350"><a href="http://www.acornpub.co.kr/book/toby-spring3.1-vol1" target="_blank" rel="noopener" data-source-url="http://acornpub.co.kr/book/toby-spring3.1-vol1">
-<div class="og-image" style="background-image: url('https://scrap.kakaocdn.net/dn/tSF55/hyDqiuXbBd/gMBkkqSd9aj0QuYOQWrlzk/img.jpg?width=458&amp;height=621&amp;face=0_0_458_621,https://scrap.kakaocdn.net/dn/5DesY/hyDqnC1nRA/ZOH9vFpLyClsf8AikKkEu0/img.png?width=258&amp;height=350&amp;face=0_0_258_350');">&nbsp;</div>
-<div class="og-text">
-<p class="og-title">토비의 스프링 3.1 Vol. 1 스프링의 이해와 원리</p>
-<p class="og-desc">스프링의 핵심 프로그래밍 모델의 원리와 이에 적용된 다양한 디자인 패턴, 프로그래밍 기법의 이해를 돕는 책</p>
-<p class="og-host">www.acornpub.co.kr</p>
-</div>
-</a></figure><div class="container_postbtn #post_button_group">
-    <div class="postbtn_like">
-        <div class="wrap_btn">
-    <button type="button" class="btn_post like_btn uoc-icon" data-uoc-svc="tistory" data-uoc-uid="3243776_20" data-uoc-sc="" data-uoc-pcurl="https://www.wbluke.com/20" data-uoc-fetchurl="http://api.kakao.tistory.com/like/fetch?uid=3243776_20">
-        <div class="uoc-icon">
-            <span class="ico_postbtn ico_like">좋아요</span>
-            <span class="txt_like uoc-text">공감</span>
-            <span class="txt_like uoc-count" style="display: none;"></span>
+    <!-- area_popup -->
+    <div class="area_popup" style="display: none;">
+      <div class="area_search thema_apply">
+        <div class="search_header">
+          <h1 class="title_logo">
+            <a href="/" title="pageseo" class="link_logo">
+              
+              
+                pageseo
+              
+            </a>
+          </h1>
+          <button type="button" class="btn_close" title="닫기"><span class="icon-Close"></span></button>
         </div>
-    </button>
-</div>
+
+        <div class="search_content">
+          <form action="" method="get">
+            <legend><span class="blind">컨텐츠 검색</span></legend>
+            <div class="box_form">
+              <span class="icon-Search"></span>
+              
+                <input type="text" name="search" title="검색어 입력" placeholder="SEARCH" value="" class="inp_search"
+                  onkeypress="if (event.keyCode == 13) { try{window.location.href='/search/'+looseURIEncode(document.getElementsByName('search')[0].value);document.getElementsByName('search')[0].value='';return false;}catch(e){} }">
+              
+              <button type="button" title="검색어 삭제" class="btn_search_del">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 36 36" class="img_svg">
+                  <defs>
+                    <path id="textDelBtnSvg" d="M20 2C10.059 2 2 10.059 2 20s8.059 18 18 18 18-8.059 18-18S29.941 2 20 2zm8 24.6L26.6 28 20 21.4 13.4 28 12 26.6l6.6-6.6-6.6-6.6 1.4-1.4 6.6 6.6 6.6-6.6 1.4 1.4-6.6 6.6 6.6 6.6z" />
+                  </defs>
+                  <g fill="none" fill-rule="evenodd" transform="translate(-2 -2)">
+                    <path d="M0 0h40v40H0z" />
+                    <mask id="textDelBtnSvgMask" fill="#fff">
+                      <use xlink:href="#textDelBtnSvg" />
+                    </mask>
+                    <g fill="#000" fill-opacity="1" mask="url(#textDelBtnSvgMask)" class="svg_bg">
+                      <path d="M0 0h40v40H0z" />
+                    </g>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </form>
+
+          
+              <!-- 태그 -->
+              <div class="tag_zone">
+                <h3 class="title_sidebar">태그</h3>
+                <div class="box_tag">
+                  <a href="/tag/Passport" class="cloud4"> Passport</a><a href="/tag/tutorial" class="cloud3"> tutorial</a><a href="/tag/authentication" class="cloud4"> authentication</a><a href="/tag/github" class="cloud3"> github</a><a href="/tag/MYSQL" class="cloud4"> MYSQL</a><a href="/tag/Postman" class="cloud3"> Postman</a><a href="/tag/multer" class="cloud4"> multer</a><a href="/tag/git" class="cloud3"> git</a><a href="/tag/postman%20test" class="cloud4"> postman test</a><a href="/tag/http" class="cloud4"> http</a><a href="/tag/token" class="cloud4"> token</a><a href="/tag/Express" class="cloud1"> Express</a><a href="/tag/JWT" class="cloud4"> JWT</a><a href="/tag/SQL" class="cloud3"> SQL</a><a href="/tag/mongodb" class="cloud4"> mongodb</a><a href="/tag/Nodejs" class="cloud4"> Nodejs</a><a href="/tag/node" class="cloud4"> node</a><a href="/tag/select" class="cloud4"> select</a><a href="/tag/Baekjoon" class="cloud4"> Baekjoon</a><a href="/tag/Algorithm" class="cloud4"> Algorithm</a>
+                </div>
+              </div>
+            
+              <!-- 최근글 -->
+              <div class="tag_board">
+                <h3 class="title_sidebar">최근글</h3>
+                <ul class="list_sidebar">
+                  
+                    <li class="item_sidebar"><a href="/51"> 정규식, 어렵지 않게 사용하기</a></li>
+                  
+
+                    <li class="item_sidebar"><a href="/50"> HashMap, 어렵지 않게 사용하기</a></li>
+                  
+
+                    <li class="item_sidebar"><a href="/49"> .</a></li>
+                  
+
+                    <li class="item_sidebar"><a href="/48"> ERD, 어렵지 않게 만들기</a></li>
+                  
+                </ul>
+              </div>
+            
+              <!-- 최근 댓글 -->
+              <div class="tag_board">
+                <h3 class="title_sidebar">댓글</h3>
+                <ul class="list_sidebar">
+                  
+                    <li class="item_sidebar"><a href="/50#comment15179218">드립력이 상당하시네요
+김씨맵 관련 포⋯</a></li>
+                  
+
+                    <li class="item_sidebar"><a href="/50#comment15178920">얼마전 해변가 놀러가서 바지에 지도를⋯</a></li>
+                  
+
+                    <li class="item_sidebar"><a href="/49#comment15173868">아
+   무
+      것
+         도⋯</a></li>
+                  
+
+                    <li class="item_sidebar"><a href="/49#comment15173854">단순한 텍스트도 포물선으로 표현하다니⋯</a></li>
+                  
+                </ul>
+              </div>
+            
+              <!-- 공지사항 -->
+              
+                <div class="tag_board">
+                  <h3 class="title_sidebar">공지사항</h3>
+                  <ul class="list_sidebar">
+                    
+                  </ul>
+                </div>
+              
+            
+              <!-- 글 보관함 -->
+              <div class="tag_board">
+                <h3 class="title_sidebar">아카이브</h3>
+                <ul class="list_sidebar">
+                  
+                    <li class="item_sidebar"><a href="/archive/202007">2020/07</a></li>
+                  
+
+                    <li class="item_sidebar"><a href="/archive/202006">2020/06</a></li>
+                  
+
+                    <li class="item_sidebar"><a href="/archive/202005">2020/05</a></li>
+                  
+
+                    <li class="item_sidebar"><a href="/archive/202004">2020/04</a></li>
+                  
+                </ul>
+              </div>
+            
+        </div>
+
+      </div>
+    </div>
+    <!-- // area_popup -->
+
+    <main id="main">
+			
+      <!-- area_cover -->
+			<!-- <div id="toc-elements"></div> -->
+      
+      <!-- // area_cover -->
+
+      
+
+      <!-- area_view -->
+      <div class="area_view">
+        <div id="toc-btn" > 
+          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="100px" height="100px" viewBox="0 0 500 500" style="enable-background:new 0 0 600.929 600.929;"
+          xml:space="preserve">
+         <g>
+           <path d="M165.304,142.468L277.517,30.267c1.902-1.903,2.847-4.093,2.847-6.567c0-2.475-0.951-4.665-2.847-6.567L263.239,2.857
+             C261.337,0.955,259.146,0,256.676,0c-2.478,0-4.665,0.955-6.571,2.857L117.057,135.9c-1.903,1.903-2.853,4.093-2.853,6.567
+             c0,2.475,0.95,4.664,2.853,6.567l133.048,133.043c1.903,1.906,4.086,2.851,6.564,2.851c2.478,0,4.66-0.947,6.563-2.851
+             l14.277-14.267c1.902-1.903,2.851-4.094,2.851-6.57c0-2.472-0.948-4.661-2.851-6.564L165.304,142.468z"/>
+           <path d="M55.668,142.468L167.87,30.267c1.903-1.903,2.851-4.093,2.851-6.567c0-2.475-0.947-4.665-2.851-6.567L153.6,2.857
+             C151.697,0.955,149.507,0,147.036,0c-2.478,0-4.668,0.955-6.57,2.857L7.417,135.9c-1.903,1.903-2.853,4.093-2.853,6.567
+             c0,2.475,0.95,4.664,2.853,6.567l133.048,133.043c1.902,1.906,4.09,2.851,6.57,2.851c2.471,0,4.661-0.947,6.563-2.851
+             l14.271-14.267c1.903-1.903,2.851-4.094,2.851-6.57c0-2.472-0.947-4.661-2.851-6.564L55.668,142.468z"/>
+         </g>
+       </svg>
+       
+        </div>
+        <div id="toc-elements">
+          <svg onclick="closeSideBar()" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="50px" height="50px" viewBox="0 0 1200 1200" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+                  <g>
+           <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+             L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+             c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+             l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+             L284.286,256.002z"/>
+         </g>
+       </svg>
+         </div>
+        
+
+          
+
+            <!-- article_content -->
+            <div class="area_article">
+
+              <!-- 뷰페이지 상단 type css 구분 / type_article_header_common or type_article_header_cover -->
+              <div class="article_header type_article_header_cover">
+                <div class="inner_header" style="background-image:url('https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F2WIPF%2FbtqE4DL8E7t%2FTKtTcCkk92pW4PtxU3wH50%2Fimg.png')">
+                  <div class="info_text">
+                    <strong class="title_post">SQL SELECT, 제대로 사용하기</strong>
+                    <p class="info"><span class="date">2020. 6. 23. 15:46</span>ㆍ<span>SERVER/DATABASE</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 에디터 영역 -->
+              <div class="article_view">
+                <div class="tt_article_useless_p_margin"><p>안녕하세요.</p>
+<p><span style="color: #0593d3;"><a href="https://gngsn.tistory.com/46">지난 포스팅</a></span>에서 <b><span style="color: #333333;">SELECT문에 대한 다양한 필터링</span></b><span style="color: #333333;">에 </span>대해 알아보았습니다.</p>
+<p>이번에는 SELECT문에 대한 다양한 필터링 및 정렬 기능에 대해 더 알아보도록 하겠습니다.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;">***************** INDEX *****************</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><span style="color: #9d9d9d;">[ 1장 ]</span></p>
+<p style="text-align: center;"><span style="color: #9d9d9d;">1. 조건 &amp; 관계 연산자</span></p>
+<p style="text-align: center;"><span style="color: #9d9d9d;">2. BETWEEN...AND</span></p>
+<p style="text-align: center;"><span style="color: #9d9d9d;">3. IN</span></p>
+<p style="text-align: center;"><span style="color: #9d9d9d;">4. LIKE</span></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><span style="color: #333333;">[ 2장 ]</span></p>
+<p style="text-align: center;"><span style="color: #333333;">5. GROUP BY - HAVING</span></p>
+<p style="text-align: center;"><span style="color: #333333;">6. ORDER BY</span></p>
+<p style="text-align: center;"><span style="color: #333333;">7. DISTINCT</span></p>
+<p style="text-align: center;"><span style="color: #333333;">8. LIMIT</span></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">********************************************</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">&nbsp;</p>
+<h2><b><span style="color: #0593d3;">🌈 첫 번째, GROUP BY - HAVING</span></b></h2>
+<p style="text-align: left;">GROUP BY 는 말 그대로 그룹으로 묶어주는 역할을 해줍니다.</p>
+<p style="text-align: left;"><span style="letter-spacing: 0px;">GROUP BY 에서는 알아볼 것들이 몇 가지 있는데요.</span></p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;" data-ke-size="size14"><i>1. GROUP BY</i></p>
+<p style="text-align: left;" data-ke-size="size14"><i>2. 집계함수 <span style="color: #9d9d9d;">AggregateFunction</span></i></p>
+<p style="text-align: left;" data-ke-size="size14"><i>3. AS</i></p>
+<p style="text-align: left;" data-ke-size="size14"><i>4. HAVING</i></p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">등이 있습니다.</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">&nbsp;</p>
+<h4 style="text-align: left;" data-ke-size="size20"><b>✔️<span style="color: #333333;">GROUP BY&nbsp;</span></b></h4>
+<p style="text-align: left;">GROUP BY &lt;column&gt; 을 해주면 column 을 그룹으로 묶어주는 역할을 합니다.</p>
+<p style="text-align: left;">&nbsp;</p>
+<p><figure class='imageblock alignCenter' data-origin-width="852" data-origin-height="950" data-filename="스크린샷 2020-06-20 오후 4.28.29.png" width="335" height="NaN" data-ke-mobilestyle="widthContent"><span data-url='https://blog.kakaocdn.net/dn/dlG3sz/btqE0ke9GI3/1vcTTHk3dkUgfs2q1u17Mk/img.png' data-lightbox='lightbox' data-alt='[TEST DATA 1]'><img src='https://blog.kakaocdn.net/dn/dlG3sz/btqE0ke9GI3/1vcTTHk3dkUgfs2q1u17Mk/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdlG3sz%2FbtqE0ke9GI3%2F1vcTTHk3dkUgfs2q1u17Mk%2Fimg.png' data-origin-width="852" data-origin-height="950" data-filename="스크린샷 2020-06-20 오후 4.28.29.png" width="335" height="NaN" data-ke-mobilestyle="widthContent"></span><figcaption>[TEST DATA 1]</figcaption></figure></p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">위의 데이터를 이용해서 GROUP BY에 대한 예시를 보겠습니다.</p>
+<p style="text-align: left;">&nbsp;</p>
+<pre id="code_1592637398346" class="sql" data-ke-language="sql" data-ke-type="codeblock"><code>SELECT * 
+FROM buy 
+GROUP BY user_id;</code></pre>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">위의 코드를 보면 user_id 값을 기준으로 묶은 데이터를 검색하게 됩니다.&nbsp;</p>
+<p style="text-align: left;">그런데 이 과정에서 의문점이 하나 생기는데요, 중복되는 데이터는 어떻게 처리가 될까요❓&nbsp;</p>
+<p style="text-align: left;">예를 들어 Margo와 Tod는 두 개의 데이터를 갖고 있습니다.</p>
+<p style="text-align: left;">이 때, price와 amount의 데이터를 어떻게 처리할까요❓&nbsp;</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">결과를 같이 한 번 보겠습니다 〰️</p>
+<p style="text-align: left;">&nbsp;</p>
+<p><figure class='imageblock alignCenter' data-filename="스크린샷 2020-06-20 오후 4.42.02.png" data-origin-width="902" data-origin-height="836" width="309" height="NaN" data-ke-mobilestyle="widthContent"><span data-url='https://blog.kakaocdn.net/dn/vY8ZI/btqEZ1UJlVU/mDDPWtuxnEl2AAK0xQZEwK/img.png' data-lightbox='lightbox' data-alt='result 1'><img src='https://blog.kakaocdn.net/dn/vY8ZI/btqEZ1UJlVU/mDDPWtuxnEl2AAK0xQZEwK/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FvY8ZI%2FbtqEZ1UJlVU%2FmDDPWtuxnEl2AAK0xQZEwK%2Fimg.png' data-filename="스크린샷 2020-06-20 오후 4.42.02.png" data-origin-width="902" data-origin-height="836" width="309" height="NaN" data-ke-mobilestyle="widthContent"></span><figcaption>result 1</figcaption></figure></p>
+<p style="text-align: left;">위와 같은 결과가 나옵니다.</p>
+<p style="text-align: left;">보면 Margo, Tod와 같이 중복된 데이터는 제일 먼저 나오는 데이터가 검색되게 됩니다.</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">그럼 한 개의 데이터가 나오는 것 말고, 모든 Margo 혹은 Tod에 대한 price를 더해서 출력하고 싶으면 어떻게 해야할까요❓&nbsp;</p>
+<p style="text-align: left;">그럴 때 <b>집계함수</b>를 사용하는데요. 지금부터 같이 살펴보도록 하겠습니다.</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">&nbsp;</p>
+<h4 style="text-align: left;" data-ke-size="size20"><b>✔️ 집계함수 </b><i><span style="color: #9d9d9d;">AggregateFunction</span></i></h4>
+<p style="text-align: left;">집계함수는 <b>효율적인 데이터 그룹화를 위한 함수</b>입니다.</p>
+<p style="text-align: left;">&nbsp;</p>
+<p><figure class='imageblock alignCenter' data-filename="스크린샷 2020-06-22 오후 5.33.35.png" data-origin-width="1358" data-origin-height="1188" width="447" height="NaN" data-ke-mobilestyle="widthContent"><span data-url='https://blog.kakaocdn.net/dn/ds2KXl/btqE2kzeIrR/pJAhxgWq91QyDCXkHNn3P0/img.png' data-lightbox='lightbox' data-alt='AggregateFunction'><img src='https://blog.kakaocdn.net/dn/ds2KXl/btqE2kzeIrR/pJAhxgWq91QyDCXkHNn3P0/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fds2KXl%2FbtqE2kzeIrR%2FpJAhxgWq91QyDCXkHNn3P0%2Fimg.png' data-filename="스크린샷 2020-06-22 오후 5.33.35.png" data-origin-width="1358" data-origin-height="1188" width="447" height="NaN" data-ke-mobilestyle="widthContent"></span><figcaption>AggregateFunction</figcaption></figure></p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">집계함수는 SELECT 문에 넣어 원하는 값을 출력하면 됩니다.</p>
+<p style="text-align: left;">예시를 한 번 들어보도록 하겠습니다.&nbsp;</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">회원들의 구매 가격을 합으로 갖는 열을 만들어보겠습니다.</p>
+<p style="text-align: left;">&nbsp;</p>
+<pre id="code_1592816054561" class="sql" data-ke-language="sql" data-ke-type="codeblock"><code>SELECT user_id, SUM(price)
+FROM buy
+GROUP BY user_id;</code></pre>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">위와 같은 쿼리문을 실행시키면 아래의 'USING SUM()' 와 같은 결과를 얻을 수 있습니다.</p>
+<p style="text-align: left;">&nbsp;</p>
+<p><figure class='imageblock alignCenter' data-filename="스크린샷 2020-06-22 오후 6.02.34.png" data-origin-width="1702" data-origin-height="1010" width="574" height="NaN" data-ke-mobilestyle="widthContent"><span data-url='https://blog.kakaocdn.net/dn/16nEe/btqE2vghRTW/PfluVjE7Oz6XfS1MF3Otmk/img.png' data-lightbox='lightbox' data-alt=''><img src='https://blog.kakaocdn.net/dn/16nEe/btqE2vghRTW/PfluVjE7Oz6XfS1MF3Otmk/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F16nEe%2FbtqE2vghRTW%2FPfluVjE7Oz6XfS1MF3Otmk%2Fimg.png' data-filename="스크린샷 2020-06-22 오후 6.02.34.png" data-origin-width="1702" data-origin-height="1010" width="574" height="NaN" data-ke-mobilestyle="widthContent"></span></figure></p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">user_id를 그룹으로 묶여 price에 SUM() 집계함수가 사용된 걸 볼 수 있죠.</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">SUM(price) 라는 열의 이름이 마음에 안든다면 이름을 바꿀 수 있습니다.</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;" data-ke-size="size18">&nbsp;</p>
+<p style="text-align: left;" data-ke-size="size18"><b>✔️ AS&nbsp; -&nbsp; <span style="color: #9d9d9d;">열 이름 지정하기&nbsp;</span></b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">as를 사용하면 별명을 붙일 수 있습니다.</p>
+<p>아래와 같이 말이죠.</p>
+<p>&nbsp;</p>
+<pre id="code_1592817010792" class="sql" data-ke-language="sql" data-ke-type="codeblock"><code>SELECT user_id, SUM(price) as price
+FROM buy
+GROUP BY user_id;</code></pre>
+<p>&nbsp;</p>
+<p>위의 결과는 아래와 같습니다.</p>
+<p>&nbsp;</p>
+<p><figure class='imageblock alignCenter' data-filename="스크린샷 2020-06-22 오후 6.13.11.png" data-origin-width="660" data-origin-height="932" width="217" height="NaN" data-ke-mobilestyle="widthContent"><span data-url='https://blog.kakaocdn.net/dn/bwD5Pl/btqE4rdbNOO/2wUCQaQgccFic2dTMSoGKK/img.png' data-lightbox='lightbox' data-alt=''><img src='https://blog.kakaocdn.net/dn/bwD5Pl/btqE4rdbNOO/2wUCQaQgccFic2dTMSoGKK/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbwD5Pl%2FbtqE4rdbNOO%2F2wUCQaQgccFic2dTMSoGKK%2Fimg.png' data-filename="스크린샷 2020-06-22 오후 6.13.11.png" data-origin-width="660" data-origin-height="932" width="217" height="NaN" data-ke-mobilestyle="widthContent"></span></figure></p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">이 때, as를 생략해도 별명으로 인식이 되기도 합니다.</p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;">이 밖에도 다양한 집계함수가 있으니, 다양하게 활용하면 좋을 것 같아요.</p>
+<p style="text-align: left;">&nbsp;</p>
+<p><figure class='imageblock alignCenter' data-filename="스크린샷 2020-06-22 오후 6.18.52.png" data-origin-width="1570" data-origin-height="716" width="566" height="NaN" data-ke-mobilestyle="widthContent"><span data-url='https://blog.kakaocdn.net/dn/bxycRi/btqE1DsDd4v/9Iq7EbUE1PCMDMXNOdM2I1/img.png' data-lightbox='lightbox' data-alt=''><img src='https://blog.kakaocdn.net/dn/bxycRi/btqE1DsDd4v/9Iq7EbUE1PCMDMXNOdM2I1/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbxycRi%2FbtqE1DsDd4v%2F9Iq7EbUE1PCMDMXNOdM2I1%2Fimg.png' data-filename="스크린샷 2020-06-22 오후 6.18.52.png" data-origin-width="1570" data-origin-height="716" width="566" height="NaN" data-ke-mobilestyle="widthContent"></span></figure></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h4 data-ke-size="size20"><b>✔️HAVING&nbsp;</b></h4>
+<p><span style="color: #333333;">자, 그럼 이번에는 집계함수에 대한 조건을 주는 방법에 대해 알아보도록 하겠습니다.</span></p>
+<p>&nbsp;</p>
+<p><span style="color: #333333;">HAVING 절은 사용할 때 알아둬야할 사항이 두 가지 있습니다.</span></p>
+<p><span style="color: #333333;">첫 번째, GROUP BY 문 뒤에 적을 수 있습니다.</span></p>
+<p><span style="color: #333333;">두 번째, 집계함수에 대한 조건을 적을 수 있습니다.</span></p>
+<p>&nbsp;</p>
+<p><span style="color: #333333;">참고로, WHERE 절에서는 집계함수에 대한 조건을 사용할 수 없습니다.</span></p>
+<p><span style="color: #333333;">해보시면 알겠지만, WHERE절은 집계함수를 인식하지 못합니다.</span></p>
+<p>&nbsp;</p>
+<p><span style="color: #333333;">이제 예시로 확인해보도록 하겠습니다.</span></p>
+<p>만약, <b>price의 합계가 50.0 이상인 것들을 검색</b>하고싶다면 아래와 같은 쿼리문을 입력하시면 됩니다.</p>
+<p>&nbsp;</p>
+<pre id="code_1592822235233" class="sql" data-ke-language="sql" data-ke-type="codeblock"><code>SELECT user_id, SUM(price) as price
+FROM buy
+GROUP BY user_id
+HAVING price &gt; 50;</code></pre>
+<p>&nbsp;</p>
+<p>위와 같이 말이죠.</p>
+<p><figure class='imageblock alignCenter' data-filename="스크린샷 2020-06-22 오후 7.40.34.png" data-origin-width="1064" data-origin-height="808" width="277" height="NaN" data-ke-mobilestyle="widthContent"><span data-url='https://blog.kakaocdn.net/dn/FPwu4/btqE1vn4ePS/pxz68arPVggzHFQbKKPGjk/img.png' data-lightbox='lightbox' data-alt=''><img src='https://blog.kakaocdn.net/dn/FPwu4/btqE1vn4ePS/pxz68arPVggzHFQbKKPGjk/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FFPwu4%2FbtqE1vn4ePS%2Fpxz68arPVggzHFQbKKPGjk%2Fimg.png' data-filename="스크린샷 2020-06-22 오후 7.40.34.png" data-origin-width="1064" data-origin-height="808" width="277" height="NaN" data-ke-mobilestyle="widthContent"></span></figure></p>
+<p>&nbsp;</p>
+<p>쿼리문을 실행시켜보면 위와 같은 결과를 얻을 수 있습니다.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2 data-ke-size="size26"><span style="color: #0593d3;"><b>✏️ 두 번째, ORDER BY</b></span></h2>
+<p>이번에는 ORDER BY에 대해 알아보고자 합니다.&nbsp;</p>
+<p><span style="color: #333333;">ORDER BY는 이름처럼 순서를 정해주는 역할을 해줍니다.</span></p>
+<p>&nbsp;</p>
+<p><span style="color: #333333;">ORDER BY는 <span style="color: #333333;">기본적으로<span>&nbsp;</span></span>오름차순 정렬으로 보여줍니다.</span></p>
+<p><span style="color: #333333;">'ORDER BY &lt;column&gt; '의 형식으로, column명에는 정렬하고자 하는 열을 선택해서 넣어주면 됩니다.</span></p>
+<p>&nbsp;</p>
+<pre id="code_1592827272400" class="sql" data-ke-language="sql" data-ke-type="codeblock"><code>SELECT *
+FROM buy
+ORDER BY user_id;
+
+// 위와 아래가 동일
+
+SELECT *
+FROM buy
+ORDER BY user_id ASC;</code></pre>
+<p>&nbsp;</p>
+<p>그럼 반대로 내림차순으로 정렬해볼까요❓&nbsp;</p>
+<p>&nbsp;</p>
+<pre id="code_1592827331123" class="sql" data-ke-language="sql" data-ke-type="codeblock"><code>SELECT *
+FROM buy
+ORDER BY user_id DESC;</code></pre>
+<p>&nbsp;</p>
+<p>위와 같이 내림차순으로 정리하려면 'DESC' 라는 키워드를 반드시 붙여줘야 합니다.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2 data-ke-size="size26"><span style="color: #0593d3;"><b>💪🏻 세 번째, DISTINCT</b></span></h2>
+<p>데이터를 검색하려고 할 때, 필요없는 중복 데이터가 계속 나오면 처리 시간만 늘어나겠죠?&nbsp;</p>
+<p>중복된 데이터는 추가하지 않고 검색하려면 어떻게 해야할까요❓&nbsp;</p>
+<p>바로 'DISTINCT' 키워드를 사용하면 됩니다.&nbsp;</p>
+<p>&nbsp;</p>
+<pre id="code_1592827740596" class="sql" data-ke-language="sql" data-ke-type="codeblock"><code>SELECT DISTINCT user_id
+FROM buy;</code></pre>
+<p>&nbsp;</p>
+<p>위와 같이 검색하고자 하는 필드명 앞에 적어주면 중복된 데이터는 삭제하고 출력이 되죠.</p>
+<p>[TEST DATA 1]과 같은 경우에는 중복된 user_id인 Margo와 Tod는 한 번씩만 출력이 됩니다.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2 data-ke-size="size26"><span style="color: #0593d3;"><b>👻 네 번째, LIMIT</b></span></h2>
+<p>마지막으로 LIMIT 키워드를 살펴볼까요❓&nbsp;</p>
+<p>LIMIT은 상위의 N개만 출력하는 &lsquo;LIMITN&rsquo;구문 사용합니다.&nbsp;</p>
+<p>일부를 보기 위해 여러 건의 데이터를 출력하는 부담 줄일 수 있죠.</p>
+<p>&nbsp;</p>
+<p>어떻게 작동이 되는지 직접 확인해 볼게요.</p>
+<p>&nbsp;</p>
+<pre id="code_1592828049461" class="sql" data-ke-language="sql" data-ke-type="codeblock"><code>SELECT *
+FROM buy
+LIMIT 5;</code></pre>
+<p>&nbsp;</p>
+<p>위와 같은 쿼리문을 입력하게 되면 상위 0~5개의 데이터만 검색할 수 있습니다.</p>
+<p>&nbsp;</p>
+<p><figure class='imageblock alignCenter' data-origin-width="1788" data-origin-height="1044" data-filename="스크린샷 2020-06-22 오후 9.17.41.png" width="752" height="NaN" data-ke-mobilestyle="widthContent"><span data-url='https://blog.kakaocdn.net/dn/bDDOEt/btqE31sscJ2/ORlbh9rN85z8VYNWmqdXL0/img.png' data-lightbox='lightbox' data-alt=''><img src='https://blog.kakaocdn.net/dn/bDDOEt/btqE31sscJ2/ORlbh9rN85z8VYNWmqdXL0/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbDDOEt%2FbtqE31sscJ2%2FORlbh9rN85z8VYNWmqdXL0%2Fimg.png' data-origin-width="1788" data-origin-height="1044" data-filename="스크린샷 2020-06-22 오후 9.17.41.png" width="752" height="NaN" data-ke-mobilestyle="widthContent"></span></figure></p>
+<p>&nbsp;</p>
+<p>위와 같이 상위 5개만 볼 수 있게 됩니다.</p>
+<p>&nbsp;</p>
+<p>그런데 범위를 지정해서 출력하고 싶을 때에는 어떻게 해야할까요❓&nbsp;</p>
+<p>범위를 지정하고 싶으면 '<b>OFFSET</b>'을 사용하면 됩니다.</p>
+<p>처음 범위를 설정해두면 LIMIT에 지정한 만큼만 뽑아서 검색하게 되죠.</p>
+<p>&nbsp;</p>
+<p>예를 들어 3번째 테이터부터 5개의 데이터를 추출하고 싶다면 아래와 같은 쿼리를 입력하시면 됩니다.</p>
+<p>(데이터는 0부터 시작합니다)</p>
+<p>&nbsp;</p>
+<pre id="code_1592894218580" class="sql" data-ke-language="sql" data-ke-type="codeblock"><code>SELECT *
+FROM buy
+LIMIT 5
+OFFSET 3;</code></pre>
+<p>&nbsp;</p>
+<p>offset을 3으로 주면 아래와 같은 결과값이 검색됩니다.</p>
+<p>&nbsp;</p>
+<p><figure class='imageblock alignCenter' data-filename="스크린샷 2020-06-23 오후 3.39.12.png" data-origin-width="1826" data-origin-height="1098" width="479" height="NaN" data-ke-mobilestyle="widthContent"><span data-url='https://blog.kakaocdn.net/dn/EROZp/btqE3efcJQH/knraI3TROxakKSl6RHNZEk/img.png' data-lightbox='lightbox' data-alt=''><img src='https://blog.kakaocdn.net/dn/EROZp/btqE3efcJQH/knraI3TROxakKSl6RHNZEk/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FEROZp%2FbtqE3efcJQH%2FknraI3TROxakKSl6RHNZEk%2Fimg.png' data-filename="스크린샷 2020-06-23 오후 3.39.12.png" data-origin-width="1826" data-origin-height="1098" width="479" height="NaN" data-ke-mobilestyle="widthContent"></span></figure></p>
+<p>&nbsp;</p>
+<p>LIMIT과 OFFSET은 pagination을 사용할 때 필요합니다.</p>
+<p>간단하지만, 성능을 높여줄 수 있죠.&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>자 그럼 여기까지 SELECT를 제대로 사용하는 법에 대해 알아보았습니다.</p>
+<p>더 많은 기능이 있지만, 이 포스팅에서는 여기까지 다뤄보도록 하겠습니다.</p><div class="container_postbtn #post_button_group">
+    <div class="postbtn_like">
+        
+<script>
+    window.ReactionButtonType = 'reaction';
+    window.ReactionApiUrl = '//gngsn.tistory.com/reaction';
+    window.ReactionReqBody = {
+        entryId: 47    }
+</script>
+<div class="wrap_btn" id=reaction-47></div>
+<script src=https://t1.daumcdn.net/tistory_admin/assets/blog/ce07b84ceeff9acb218cdf96ccb5e6a409b92417/blogs/script/reaction/reaction-button-container.min.js?_version_=ce07b84ceeff9acb218cdf96ccb5e6a409b92417></script>
         <div class="wrap_btn wrap_btn_share">
-    <button type="button" class="btn_post sns_btn btn_share" data-thumbnail-url="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbFaHKL%2Fbtqzs6tP9BM%2F4KqhfoX8QE7b4KSwNSYha1%2Fimg.png" data-title="[토비의 스프링] 6. AOP (2)" data-description="이전 글 : [토비의 스프링] 6. AOP (1) 지금까지 해왔던 작업은 비즈니스 로직에 반복적으로 등장하는 트랜잭션 코드를 투명하게 분리해내는 것이었다. 투명하다는 것은 투명한 유리를 사이에 둔 것처럼, 부가기능.." data-profile-image="https://tistory2.daumcdn.net/tistory/3243776/attach/5b586e2862584b7cbe0756f0ce9788b9" data-profile-name="우비닉" data-pc-url="https://www.wbluke.com/20" data-blog-title="함께 자라기">
+    <button type="button" class="btn_post sns_btn btn_share" data-thumbnail-url="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F2WIPF%2FbtqE4DL8E7t%2FTKtTcCkk92pW4PtxU3wH50%2Fimg.png" data-title="SQL SELECT, 제대로 사용하기" data-description="안녕하세요. 지난 포스팅에서 SELECT문에 대한 다양한 필터링에 대해 알아보았습니다. 이번에는 SELECT문에 대한 다양한 필터링 및 정렬 기능에 대해 더 알아보도록 하겠습니다. ***************** INDEX ********.." data-profile-image="https://tistory3.daumcdn.net/tistory/3172059/attach/06d726fdd8264d16af5ed24ebc08064f" data-profile-name="gngsn" data-pc-url="https://gngsn.tistory.com/47" data-relative-pc-url="/47" data-blog-title="pageseo">
         <span class="ico_postbtn ico_share">공유하기</span>
     </button>
 </div>
-        <div class="wrap_btn">
-    <button type="button" class="btn_post" data-entry-id="20">
-        <span class="ico_postbtn ico_statistics">통계</span>
-    </button>
-</div>
-        <div class="wrap_btn wrap_btn_etc" data-entry-id="20" data-entry-visibility="public" data-category-visibility="public">
+                <div class="wrap_btn wrap_btn_etc" data-entry-id="47" data-entry-visibility="public" data-category-visibility="public">
     <button type="button" class="btn_post btn_etc1"><span class="ico_postbtn ico_etc">글 요소</span></button>
 </div>
     </div>
-        <div class="postbtn_ccl" data-ccl-type="3">
-    <a href="https://creativecommons.org/licenses/by/4.0/deed.ko" target="_blank" class="link_ccl">
+        <div class="postbtn_ccl" data-ccl-type="6">
+    <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.ko" target="_blank" class="link_ccl">
         <span class="bundle_ccl">
-            <span class="ico_postbtn ico_ccl1">저작자표시</span>        </span>
+            <span class="ico_postbtn ico_ccl1">저작자표시</span><span class="ico_postbtn ico_ccl2">비영리</span>        </span>
     </a>
 </div>
     <!--
 <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <Work rdf:about="">
-        <license rdf:resource="http://creativecommons.org/licenses/by-fr/2.0/kr/" />
+        <license rdf:resource="http://creativecommons.org/licenses/by-nc-fr/2.0/kr/" />
     </Work>
-    <License rdf:about="http://creativecommons.org/licenses/by-fr/">
+    <License rdf:about="http://creativecommons.org/licenses/by-nc-fr/">
         <permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
         <permits rdf:resource="http://web.resource.org/cc/Distribution"/>
         <requires rdf:resource="http://web.resource.org/cc/Notice"/>
         <requires rdf:resource="http://web.resource.org/cc/Attribution"/>
-                <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
-                    </License>
+                        <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/>
+            </License>
 </rdf:RDF>
 -->
 </div><div class="another_category another_category_color_gray">
-<h4>'<a href="/category/Spring">Spring</a>&nbsp;&gt;&nbsp;<a href="/category/Spring/토비의%20스프링%203.1">토비의 스프링 3.1</a>' 카테고리의 다른 글</h4>
+<h4>'<a href="/category/SERVER">SERVER</a>&nbsp;>&nbsp;<a href="/category/SERVER/DATABASE">DATABASE</a>' 카테고리의 다른 글</h4>
 <table>
-<tbody><tr>
+<tr>
 <th>
-<a href="/20?category=351150" class="current">[토비의 스프링] 6. AOP (2)</a>&nbsp;&nbsp;<span>(0)</span>
+<a href="/48?category=851218" >ERD, 어렵지 않게 만들기</a>&nbsp;&nbsp;<span>(2)</span>
 </th>
 <td>
-2019.11.02</td>
+2020.06.26</td>
 </tr>
 <tr>
 <th>
-<a href="/17?category=351150">[토비의 스프링] 6. AOP (1)</a>&nbsp;&nbsp;<span>(2)</span>
+<a href="/47?category=851218"  class ="current" >SQL SELECT, 제대로 사용하기</a>&nbsp;&nbsp;<span>(0)</span>
 </th>
 <td>
-2019.10.27</td>
+2020.06.23</td>
 </tr>
 <tr>
 <th>
-<a href="/16?category=351150">[토비의 스프링] 5. 서비스 추상화</a>&nbsp;&nbsp;<span>(0)</span>
+<a href="/46?category=851218" >SQL SELECT, 제대로 사용하기 - where 조건절</a>&nbsp;&nbsp;<span>(0)</span>
 </th>
 <td>
-2019.10.12</td>
+2020.06.20</td>
 </tr>
 <tr>
 <th>
-<a href="/15?category=351150">[토비의 스프링] 4. 예외</a>&nbsp;&nbsp;<span>(0)</span>
+<a href="/45?category=851218" >정규화, 어렵지 않게 시작하기</a>&nbsp;&nbsp;<span>(2)</span>
 </th>
 <td>
-2019.10.10</td>
+2020.06.15</td>
 </tr>
 <tr>
 <th>
-<a href="/14?category=351150">[토비의 스프링] 3. 템플릿</a>&nbsp;&nbsp;<span>(0)</span>
+<a href="/30?category=851218" >SQL, 어렵지 않게 사용하기 - DDL</a>&nbsp;&nbsp;<span>(0)</span>
 </th>
 <td>
-2019.10.03</td>
+2020.05.15</td>
 </tr>
 <tr>
 <th>
-<a href="/13?category=351150">[토비의 스프링] 2. 테스트</a>&nbsp;&nbsp;<span>(0)</span>
+<a href="/29?category=851218" >SQL, 어렵지 않게 사용하기 - Constaint</a>&nbsp;&nbsp;<span>(0)</span>
 </th>
 <td>
-2019.10.03</td>
+2020.05.11</td>
 </tr>
-</tbody></table></div></div>
-								</div>
-								<div class="area_etc">
-									
-										<dl class="list_tag">
-											<dt class="tit_tag">TAG</dt>
-											<dd class="desc_tag"><a href="/tag/%EC%8A%A4%ED%94%84%EB%A7%81" rel="tag">스프링</a>,
-<a href="/tag/%ED%86%A0%EB%B9%84" rel="tag">토비</a>,
-<a href="/tag/%ED%86%A0%EB%B9%84%EC%9D%98%20%EC%8A%A4%ED%94%84%EB%A7%81" rel="tag">토비의 스프링</a>,
-<a href="/tag/%ED%94%84%EB%A1%9D%EC%8B%9C" rel="tag">프록시</a></dd>
-										</dl>
-									
-								</div>
+</table></div></div>
+              </div>
+
+              <!-- article_content -->
+              <div class="article_content">
+                <!-- <ul class="list_share list_sns">
+                                        <li class="item_share"><a href="#" class="link_share link_facebook" data-service="facebook"><span class="icon-Facebook"></span><span class="blind">페이스북</span></a></li>
+                                        <li class="item_share"><a href="#" class="link_share link_twitter" data-service="twitter"><span class="icon-Twitter"></span><span class="blind">트위터</span></a></li>
+                                        <li class="item_share"><a href="#" class="link_share link_story" data-service="kakaostory"><span class="icon-Story"></span><span class="blind">카카오스토리</span></a></li>
+                                        <li class="item_share"><a href="#" class="link_share link_kakao" data-service="kakaotalk"><span class="icon-Kakao"></span><span class="blind">카카오톡</span></a></li>
+                                    </ul> -->
+
+                
+                  <!-- area_tag -->
+                  <div class="area_tag">
+                    <h3 class="title_tag">TAG</h3>
+                    <div class="tag_content thema_apply"><a href="/tag/AggregateFunction"  rel="tag">AggregateFunction</a>,
+<a href="/tag/group%20by"  rel="tag">group by</a>,
+<a href="/tag/Limit"  rel="tag">Limit</a>,
+<a href="/tag/offset"  rel="tag">offset</a>,
+<a href="/tag/order%20by"  rel="tag">order by</a>,
+<a href="/tag/pagination"  rel="tag">pagination</a>,
+<a href="/tag/select"  rel="tag">select</a>,
+<a href="/tag/SQL"  rel="tag">SQL</a>,
+<a href="/tag/%EC%A7%91%EA%B3%84%ED%95%A8%EC%88%98"  rel="tag">집계함수</a></div>
+                  </div>
+                  <!-- // area_tag -->
+                
+
+                
+                  <!-- area_related -->
+                  <div class="area_related">
+                    <h3 class="title_related">관련글</h3>
+                    <ul class="list_related">
+                      
+                        <li class="item_related">
+                          <a href="/48?category=851218" class="link_related">
+                            <span class="thumnail item-thumbnail" style="background-image:url('https://blog.kakaocdn.net/dn/bmUaoJ/btqE9uHCg6J/NdzoJQHTe2pUJLrIJuacJK/img.png')"></span>
+                            <div class="box_content">
+                              <strong>ERD, 어렵지 않게 만들기</strong>
+                              <span class="info">2020.06.26</span>
+                            </div>
+                          </a>
+                        </li>
+                      
+                        <li class="item_related">
+                          <a href="/46?category=851218" class="link_related">
+                            <span class="thumnail item-thumbnail" style="background-image:url('https://blog.kakaocdn.net/dn/X8WxI/btqEZ95yKus/1nHMlljhW720FVqv1qgMtk/img.png')"></span>
+                            <div class="box_content">
+                              <strong>SQL SELECT, 제대로 사용하기 - where 조건절</strong>
+                              <span class="info">2020.06.20</span>
+                            </div>
+                          </a>
+                        </li>
+                      
+                        <li class="item_related">
+                          <a href="/45?category=851218" class="link_related">
+                            <span class="thumnail item-thumbnail" style="background-image:url('https://blog.kakaocdn.net/dn/ILFyg/btqEPUnKCUa/QLQ9alKFLvxD2ChaXKuLsK/img.png')"></span>
+                            <div class="box_content">
+                              <strong>정규화, 어렵지 않게 시작하기</strong>
+                              <span class="info">2020.06.15</span>
+                            </div>
+                          </a>
+                        </li>
+                      
+                        <li class="item_related">
+                          <a href="/30?category=851218" class="link_related">
+                            <span class="thumnail item-thumbnail" style="background-image:url('')"></span>
+                            <div class="box_content">
+                              <strong>SQL, 어렵지 않게 사용하기 - DDL</strong>
+                              <span class="info">2020.05.15</span>
+                            </div>
+                          </a>
+                        </li>
+                      
+                    </ul>
+                  </div>
+                  <!-- // area_related -->
+                
+
+                <!-- area_reply -->
+                <div class="area_reply">
+
+                  <div class="box_reply_info">
+                    <a href="#rp" onclick="" class="reply_events">댓글 <span></span></a>
+                  </div>
+
+                  <!-- reply_content -->
+                  <div class="reply_content">
+                    <button type="button" class="btn_more btn_replymore" style="display:none;">+ 이전 댓글 더보기</button>
+
+                    <div id="entry47Comment">
+                      <!-- box_comment_list -->
+                      <div class="box_comment_list">
+                        
+                      </div>
+                      <!-- // box_comment_list -->
+
+                      <form method="post" action="/comment/add/47" onsubmit="return false" style="margin: 0">
+                        <!-- reply_write -->
+                        <form method="post">
+                          <div class="reply_write">
+                            
+                            <div class="form_content">
+                              <textarea id="comment" name="comment" placeholder="댓글을 입력해주세요."></textarea>
+                            </div>
+
+                            <div class="form_reg thema_apply">
+                              <label><input type="checkbox" name=""> 비공개</label>
+                              <button type="button" class="btn_register" onclick="addComment(this, 47); return false;">댓글 남기기</button>
+                            </div>
+
+                          </div>
+                        </form>
+                        <!-- // reply_write -->
+                      </form>
+                    </div><script type="text/javascript">loadedComments[47]=true;findFragmentAndHighlight(47)</script>
+
+                  </div>
+                  <!-- // reply_content -->
+
+                </div>
+                <!-- // area_reply -->
+              </div>
+              <!-- // article_content -->
+
+            </div>
+            <!-- article_content -->
 
 
-								<div class="area_reply ">
+          
+        
+      </div>
+      <!-- // area_view -->
 
+      
 
-									<strong class="tit_reply">댓글
-										<button type="button" class="btn_reply on" onclick="$.Area.Comment.changeStatus();">
-											<span id="commentCount20_0">0</span>
-											<span class="ico_skin ico_reply">댓글펼치기</span>
-										</button>
-									</strong>
+      
 
+      
 
+      
 
-									<!-- 대체텍스트 댓글펼치기/댓글접기 변경 -->
-									<div id="entry20Comment">
-										<button type="button" class="btn_replymore">이전 댓글 보기</button>
-										
+      
 
-										<form method="post" action="/comment/add/20" onsubmit="return false" style="margin: 0">
-											<fieldset class="fld_reply">
-												<legend class="screen_out">댓글쓰기 폼</legend>
-												<div class="reply_write ">
-													<label for="comment" class="lab_write"></label>
-													<textarea id="comment" name="comment" class="tf_reply" placeholder="여러분의 소중한 댓글을 입력해주세요" tabindex="1"></textarea>
-												</div>
-												<div class="reply_writer">
-													
+      
 
-													<div class="writer_btn">
-														<button type="submit" class="btn_enter" onclick="addComment(this, 20); return false;" tabindex="5">입력</button>
-													</div>
-												</div>
-											</fieldset>
-										</form>
+      
+        <!-- area_paging -->
+        <div class="area_paging">
+          <a  href='/48' class="link_page link_prev "><span class="icon-Keyboard-Arrow---Left"></span></a>
+          <div class="paging_num thema_apply">
+            
+              <a  href='/51' class="link_num"><span >1</span></a>
+            
+              <a  href='/50' class="link_num"><span >2</span></a>
+            
+              <a  href='/49' class="link_num"><span >3</span></a>
+            
+              <a  href='/48' class="link_num"><span >4</span></a>
+            
+              <a  class="link_num"><span class="selected">5</span></a>
+            
+              <a  href='/46' class="link_num"><span >6</span></a>
+            
+              <a  href='/45' class="link_num"><span >7</span></a>
+            
+              <a  href='/44' class="link_num"><span >8</span></a>
+            
+              <a  href='/43' class="link_num"><span >9</span></a>
+            
+              <a  class="link_num"><span >&middot;&middot;&middot;</span></a>
+            
+              <a  href='/2' class="link_num"><span >48</span></a>
+            
+          </div>
+          <a  href='/46' class="link_page link_next "><span class="icon-Keyboard-Arrow---Right"></span></a>
+        </div>
+        <!-- // area_paging -->
+      
+    </main>
 
-									</div><script type="text/javascript">loadedComments[20]=true;findFragmentAndHighlight(20)</script>
-								</div>
-							</div>
-						
-					</div>
-				
+    </div>
+    <!-- // container -->
 
-				
+    <!-- footer -->
+    <footer id="footer">
+      <div class="inner_footer">
+        
+          <a href="https://github.com/gngsn" class="link_footer">깃허브</a>
+        
+        
+          <a href="https://www.instagram.com/pppppppppark/" class="link_footer">인스타</a>
+        
+        
+        
+      </div>
+      <div>
+        <address>© 2018 TISTORY. All rights reserved.</address>
+      </div>
 
-				
+    </footer>
+    <!-- // footer -->
 
-
-				
-					<div class="area_paging area_paging_list">
-						<span class="inner_paging">
-							<a class="ico_skin link_prev no-more-prev">이전</a>
-							
-								<a class="link_page"><span class="selected">1</span></a>
-							
-								<a href="/17" class="link_page"><span>2</span></a>
-							
-								<a href="/18" class="link_page"><span>3</span></a>
-							
-								<a href="/16" class="link_page"><span>4</span></a>
-							
-								<a href="/15" class="link_page"><span>5</span></a>
-							
-								<a class="link_page"><span>···</span></a>
-							
-								<a href="/2" class="link_page"><span>14</span></a>
-							
-							<a href="/17" class="ico_skin link_next ">다음</a>
-						</span>
-					</div>
-
-					<div class="area_paging area_paging_simple">
-						<div class="inner_paging">
-							<a class="link_prev no-more-prev">
-								<span class="ico_skin ico_prev"></span>이전
-							</a>
-
-							<a href="/17" class="link_next ">
-								다음<span class="ico_skin ico_next"></span>
-							</a>
-						</div>
-					</div>
-				
-
-
-				<div id="mEtc" class="wrap_etc">
-					<div class="inner_aside">
-						
-								<!-- 최근에 올라온 글 -->
-								<div class="box_aside">
-									<strong>최근에 올라온 글</strong>
-									<ul class="list_board">
-										
-											<li><a href="/20" class="link_board">[토비의 스프링] 6. AOP (2)</a></li>
-										
-
-											<li><a href="/17" class="link_board">[토비의 스프링] 6. AOP (1)</a></li>
-										
-
-											<li><a href="/18" class="link_board">JPA Pagination을 이용한..</a></li>
-										
-
-											<li><a href="/16" class="link_board">[토비의 스프링] 5. 서비스..</a></li>
-										
-
-											<li><a href="/15" class="link_board">[토비의 스프링] 4. 예외</a></li>
-										
-
-											<li><a href="/9" class="link_board">IoC랑 DI가 그래서 도대체..</a></li>
-										
-
-											<li><a href="/14" class="link_board">[토비의 스프링] 3. 템플릿</a></li>
-										
-
-											<li><a href="/13" class="link_board">[토비의 스프링] 2. 테스트</a></li>
-										
-									</ul>
-								</div>
-							
-								<!-- 최근에 달린 댓글 -->
-								<div class="box_aside">
-									<strong>최근에 달린 댓글</strong>
-									<ul class="list_board">
-										
-											<li><a href="/17#comment5595542" class="link_board">글을 읽고 많은 도움을 받았습..</a></li>
-										
-
-											<li><a href="/17#comment5595541" class="link_board">재촉한 보람이 있네요^^ 다음..</a></li>
-										
-
-											<li><a href="/2#comment5592049" class="link_board">네ㅎㅎ dev@wbluke.com 으로..</a></li>
-										
-
-											<li><a href="/2#comment5591825" class="link_board">우아한 테크코스에 대해서 여..</a></li>
-										
-
-											<li><a href="/9#comment5589033" class="link_board">우비닉,,, 그는 대체.... 못하..</a></li>
-										
-
-											<li><a href="/2#comment5584599" class="link_board">여기서 이러시면 안됩니다 우..</a></li>
-										
-
-											<li><a href="/2#comment5584571" class="link_board">너무 멋있어요!!! 어떻게 하면..</a></li>
-										
-
-											<li><a href="/9#comment5582149" class="link_board">좋은글 감사합니다 ~~ 구독 두..</a></li>
-										
-									</ul>
-								</div>
-							
-								<!-- 태그 클라우드 -->
-								<div class="box_aside">
-									<strong>TAG</strong>
-									<ul class="list_tag">
-										
-											<li><a href="/tag/%ED%86%A0%EC%9D%B4%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8" class="link_tag cloud5">토이프로젝트</a></li>
-										
-											<li><a href="/tag/DI" class="link_tag cloud4">DI</a></li>
-										
-											<li><a href="/tag/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98" class="link_tag cloud4">트랜잭션</a></li>
-										
-											<li><a href="/tag/%ED%86%A0%EB%B9%84" class="link_tag cloud1">토비</a></li>
-										
-											<li><a href="/tag/%ED%8E%98%EC%9D%B4%EC%A7%80%EB%84%A4%EC%9D%B4%EC%85%98" class="link_tag cloud5">페이지네이션</a></li>
-										
-											<li><a href="/tag/%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4" class="link_tag cloud4">우아한테크코스</a></li>
-										
-											<li><a href="/tag/IOC" class="link_tag cloud4">IOC</a></li>
-										
-											<li><a href="/tag/%EC%8A%A4%ED%94%84%EB%A7%81" class="link_tag cloud1">스프링</a></li>
-										
-											<li><a href="/tag/%ED%86%A0%EB%B9%84%EC%9D%98%20%EC%8A%A4%ED%94%84%EB%A7%81" class="link_tag cloud1">토비의 스프링</a></li>
-										
-											<li><a href="/tag/%ED%94%84%EB%A1%9D%EC%8B%9C" class="link_tag cloud4">프록시</a></li>
-										
-											<li><a href="/tag/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC" class="link_tag cloud4">예외처리</a></li>
-										
-											<li><a href="/tag/%EC%9A%B0%ED%85%8C%EC%BD%94" class="link_tag cloud4">우테코</a></li>
-										
-											<li><a href="/tag/%EC%9A%B0%EC%95%84%ED%95%9C%20%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4" class="link_tag cloud5">우아한 테크코스</a></li>
-										
-											<li><a href="/tag/%EC%8A%AC%EB%9E%99%EB%B4%87" class="link_tag cloud5">슬랙봇</a></li>
-										
-									</ul>
-									<a href="/tag" class="link_more">more</a>
-								</div>
-							
-								<!-- 방문자수 -->
-								<div class="box_aside lst">
-									<dl class="list_total">
-										<dt>Total</dt>
-										<dd>967</dd>
-									</dl>
-									<dl class="list_visitor">
-										<dt>Today</dt>
-										<dd>2</dd>
-									</dl>
-									<dl class="list_visitor">
-										<dt>Yesterday</dt>
-										<dd>52</dd>
-									</dl>
-								</div>
-							
-					</div>
-				</div>
-			</div>
-		</div>
-		<hr class="hide">
-		<div id="dkFoot" role="contentinfo" class="area_foot">
-			Blog is powered by
-			<em class="emph_t">Tistory</em> / Designed by
-			<em class="emph_t">Tistory</em>
-		</div>
-	</div>
-
-
-<script src="https://tistory1.daumcdn.net/tistory/3243776/skin/images/script.js"></script>
-<script>
-	(function($) {
-		$.Area.init();
-	})(jQuery);
-</script>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/darcula.min.css">
+    </div>
+    <!-- // wrap -->
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/atom-one-dark-reasonable.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script><script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
-<script type="text/javascript">
-	if(!wcs_add) var wcs_add = {};
-	wcs_add["wa"] = encodeURI("	59abf72d079a");
-	wcs_do();
-</script><script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/kotlin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/swift.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/go.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/scala.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script><script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-150952173-1', 'auto');
+	ga('create', 'UA-174913603-1', 'auto');
 	ga('send', 'pageview');
 </script><script src="//search1.daumcdn.net/search/statics/common/js/g/search_dragselection.min.js"></script>
-<script>
-    (function($) {
-        $("body").bind('copy', function (e) {
 
-            var url = document.location.href,
-                decodedUrl = decodeURI(url),
-                selection = window.getSelection();
-
-
-            if (typeof window.getSelection == "undefined") {//IE8 or earlier...
-                event.preventDefault();
-
-                var pagelink = '\n\n 출처: ' + decodedUrl,
-                    copytext = selection + pagelink;
-
-                if (window.clipboardData) {
-                    window.clipboardData.setData('Text', copytext);
-                }
-                return;
-            }
-            var body_element = document.getElementsByTagName('body')[0];
-
-            //if the selection is short let's not annoy our users
-            if (("" + selection).length < 30) return;
-
-            //create a div outside of the visible area
-            var newdiv = document.createElement('div');
-            newdiv.style.position = 'absolute';
-            newdiv.style.left = '-99999px';
-            body_element.appendChild(newdiv);
-            newdiv.appendChild(selection.getRangeAt(0).cloneContents());
-
-            //we need a <pre> tag workaround
-            //otherwise the text inside "pre" loses all the line breaks!
-            if (selection.getRangeAt(0).commonAncestorContainer.nodeName == "PRE") {
-                newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
-            }
-
-            newdiv.innerHTML += '<br /><br />출처: <a href="' + url + '">' + escapeHTML(decodedUrl) + '</a> [함께 자라기]';
-
-            selection.selectAllChildren(newdiv);
-
-            window.setTimeout(function () {
-                body_element.removeChild(newdiv);
-            }, 200);
-        });
-    })(tjQuery);
-</script>
 	<script>
 	    lightbox.option({
 			"fadeDuration": 200,
@@ -1085,68 +1112,27 @@ execution(* *(..)) <span class="hljs-comment">// 모든 메소드 허용</span><
 			"fitImagesInViewport":true ,
 			"stopEvent": false
 	    })
-	</script><script type="text/javascript">
-var _tiq = 'undefined' !== typeof _tiq ? _tiq : [];
-_tiq.push(['__setConfig', {enableScroll:true, enableClick:true, enableButton:true}]);
-_tiq.push(["__setParam", "svcdomain", "user.tistory.com"]);
-(function(d) {
-	var se = d.createElement('script'); se.type = 'text/javascript'; se.async = true;
-	se.src = location.protocol + '//m2.daumcdn.net/tiara/js/td.min.js';
-	var s = d.getElementsByTagName('head')[0]; s.appendChild(se);
-})(document);
-_tiq.push(['__setParam', 'param_ex', JSON.stringify({"userId":"3983921","blogId":"3243776","role":"owner","filterTarget":false,"entryId":"20"})]);
-_tiq.push(['__trackPageview']);
-_tiq.push(['__content', 't_content', {
-'c_id':'3243776_20', 
-'c_title':'[토비의 스프링] 6. AOP (2)', 
-'type':'article', 
-'author':'', 
-'author_id':'3983921', 
-'cp':'함께 자라기', 
-'cp_id':'3243776', 
-'regdata':'2019-11-02 17:29:01', 
-'plink':'https://www.wbluke.com/20', 
-'media':'pcweb', 
-}]);
-var addEvent = function (evt, fn) { window.addEventListener ? window.addEventListener(evt, fn, false) : window.attachEvent('on' + evt, fn); };
-var removeEvent = function(evt, fn) { window.removeEventListener ? window.removeEventListener(evt, fn, false) : window.detachEvent('on' + evt, fn);};
-var ua = navigator.userAgent.toLowerCase(); var isIOS = /iP[ao]d|iPhone/i.test(ua);
-var contentExStat = function() {
-		_tiq.push(['__content', 't_content_ex', {
-			'data_type':'usage'
-, 'meta': {
-'c_id':'3243776_20', 
-'c_title':'[토비의 스프링] 6. AOP (2)', 
-'type':'article', 
-'author':'', 
-'author_id':'3983921', 
-'cp':'함께 자라기', 
-'cp_id':'3243776', 
-'regdata':'2019-11-02 17:29:01', 
-'plink':'https://www.wbluke.com/20', 
-'media':'pcweb', 
-}
-}]);
-		removeEvent(isIOS ? 'pagehide' : 'beforeunload', contentExStat);
-};
-addEvent(isIOS ? 'pagehide' : 'beforeunload', contentExStat);
-</script>
-<script type="text/javascript">window.roosevelt_params_queue = window.roosevelt_params_queue || []; window.roosevelt_params_queue.push({channel_id: "dk", channel_label: 'tistory'});</script>
-<script type="text/javascript" src="//t1.daumcdn.net/midas/rt/dk_bt/roosevelt_dk_bt.js" async=""></script><script type="text/javascript">if(window.console!=undefined){setTimeout(console.log.bind(console,"%cTISTORY","font:8em Arial;color:#EC6521;font-weight:bold"),0);setTimeout(console.log.bind(console,"%c  나를 표현하는 블로그","font:2em sans-serif;color:#333;"),0);}</script><iframe style="position:absolute;width:1px;height:1px;left:-100px;top:-100px" src="//wbluke.tistory.com/api" id="editEntry"></iframe>            <div class="#menubar menu_toolbar  toolbar_rb">
+	</script>            <script type="text/javascript" src="//t1.daumcdn.net/tiara/js/v1/tiara.min.js"></script>
+            <script type="text/javascript">window.tiara = {"svcDomain":"user.tistory.com","section":"\uae00\ubdf0","trackPage":"\uae00\ubdf0_\ubcf4\uae30","page":"\uae00\ubdf0","key":"3172059-47","customProps":{"userId":"3815497","blogId":"3172059","role":"owner","filterTarget":false,"trackPage":"\uae00\ubdf0_\ubcf4\uae30","entryId":"47"},"entry":{"entryId":"47","categoryName":"DATABASE","categoryId":"851218","author":"3815497","authorId":"3815497","image":"3815497","plink":"\/47","tags":["AggregateFunction","group by","Limit","offset","order by","pagination","select","SQL","\uc9d1\uacc4\ud568\uc218"],"key":"3172059-47"},"sentryDsn":"https:\/\/a53520229cd744e798d42900d76b0e2a@aem-collector.daumkakao.io\/713"};</script>
+            <script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/assets/blog/ce07b84ceeff9acb218cdf96ccb5e6a409b92417/blogs/script/tiara/tiara.min.js?_version_=ce07b84ceeff9acb218cdf96ccb5e6a409b92417" defer></script>
+                        <script type="text/javascript">
+                window.roosevelt_params_queue = window.roosevelt_params_queue || [{channel_id: 'dk', channel_label: 'tistoryg.m'}];
+            </script>
+            <script type="text/javascript" src="//t1.daumcdn.net/midas/rt/dk_bt/roosevelt_dk_bt.js" async></script><script type="text/javascript">if(window.console!=undefined){setTimeout(console.log.bind(console,"%cTISTORY","font:8em Arial;color:#EC6521;font-weight:bold"),0);setTimeout(console.log.bind(console,"%c  나를 표현하는 블로그","font:2em sans-serif;color:#333;"),0);}</script><iframe style="position:absolute;width:1px;height:1px;left:-100px;top:-100px" src="//gngsn.tistory.com/api" id="editEntry"></iframe>            <div class="#menubar menu_toolbar  toolbar_rc">
                                             <h2 class="screen_out">티스토리툴바</h2>
                                             
                                        </div>
-                                       <div class="#menubar menu_toolbar  toolbar_rb"></div>
-                                       <script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/assets/blog/7030d16adb598bf18f40d52aa2445c3890b96c04/blogs/script/menubar.min.js?_version_=7030d16adb598bf18f40d52aa2445c3890b96c04"></script><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0px;width:0px;height:0px;"></iframe></ins></ins></ins>        <div class="layer_tooltip">
+                                       <div class="#menubar menu_toolbar "></div>
+                                       <script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/assets/blog/ce07b84ceeff9acb218cdf96ccb5e6a409b92417/blogs/script/menubar.min.js?_version_=ce07b84ceeff9acb218cdf96ccb5e6a409b92417"></script>        <div class="layer_tooltip">
             <div class="inner_layer_tooltip">
                 <p class="desc_g"></p>
             </div>
         </div>
-        <div id="tistoryEtcLayer" class="layer_post" style="display: none;"></div><div id="tistorySnsLayer" class="layer_post" style="display: none;"><div class="bundle_post"><a href="#none" class="btn_mark" data-service="facebook"><span class="ico_sns ico_fb"></span>페이스북으로 공유</a><a href="#none" class="btn_mark" data-service="kakaotalk"><span class="ico_sns ico_kt"></span>카카오톡으로 공유</a><a href="#none" class="btn_mark" data-service="kakaostory"><span class="ico_sns ico_ks"></span>카카오스토리로 공유</a><a href="#none" class="btn_mark" data-service="twitter"><span class="ico_sns ico_tw"></span>트위터로 공유</a><a href="#none" class="btn_mark" data-service="url"><span class="ico_sns ico_url"></span>URL 복사</a><span class="ico_postbtn ico_arrbt"></span></div></div>
-
-
-<div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href=""></a><a class="lb-next" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div><iframe id="google_osd_static_frame_6661804402278" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body><iframe id="google_shimpl" style="display: none;"></iframe><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20191106/r20190131/zrt_lookup.html#" data-ad-client="ca-pub-9348951692816238" style="display: none;"></iframe>
-
-<script src="./dev-toc.js"></script>
-
+        <div id="tistoryEtcLayer" class="layer_post"></div><div id="tistorySnsLayer" class="layer_post"></div></body>
+<script>
+  $('.article_view').find('table').each(function (idx, el) {
+    $(el).wrap('<div class="table-overflow">')
+  })
+</script>
+<script src="../toc-btn.js"></script>
 </html>

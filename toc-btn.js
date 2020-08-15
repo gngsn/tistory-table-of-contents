@@ -4,7 +4,7 @@
  * last update 2020.05.06
  * version 0.1.5
  */
-
+// class="toc-btn"
 const CLASS_OF_MAIN_CONTENTS = '.article_view';
 const TOC_BTN = 'toc-btn';
 
@@ -41,6 +41,7 @@ const CONSTANTS = (function () {
 })();
 
 const TOC_CARD = (function () {
+  
   const TocCardController = function () {
 
     const tocCardService = new TocCardService();
@@ -69,7 +70,7 @@ const TOC_CARD = (function () {
       }
     };
 
-    const onscroll = function () {
+    const onscroll = function () {      
       const tocTag = tocCardService.findCurrentHTag();
 
       if (tocTag) {
@@ -85,21 +86,27 @@ const TOC_CARD = (function () {
     };
   };
 
+
+  
 document.getElementById(TOC_BTN).onclick = function () {
-  document.getElementsByClassName("article_view")[0].style.marginRight = "25%";
-  document.getElementById("toc-btn").children[0].style.display = 'none';
-  document.getElementsByClassName("toc-app-common")[0].style.width = "20%";
-  document.getElementsByClassName("toc-app-common")[0].style.display = "block";
-  document.getElementsByClassName("toc-app-common")[0].children[0].style.display = "block";
+    document.getElementsByClassName("article_view")[0].style.marginRight = "25%";
+    document.getElementById("toc-btn").children[0].style.display = 'none';
+    document.getElementsByClassName("toc-app-common")[0].style.width = "20%";
+    document.getElementsByClassName("toc-app-common")[0].style.display = "block";
 };
 
 
 document.getElementById('toc-elements').children[0].onclick = function () {
-document.getElementsByClassName("article_view")[0].style.marginRight = "auto";
-  document.getElementById("toc-btn").children[0].style.display = 'block';
-  document.getElementsByClassName("toc-app-common")[0].style.width = "0%";
-  document.getElementsByClassName("toc-app-common")[0].style.display = "none";
+  document.getElementsByClassName("article_view")[0].style.marginRight = "auto";
+    document.getElementById("toc-btn").children[0].style.display = 'block';
+    document.getElementsByClassName("toc-app-common")[0].style.width = "0%";
+    document.getElementsByClassName("toc-app-common")[0].style.display = "none";
 }
+
+
+
+
+
 
   const TocCardService = function () {
     const tocElementsCard = document.querySelector('#toc-elements');
@@ -376,3 +383,4 @@ TOC_CARD.init();
 window.onscroll = function () {
   TOC_CARD.onscroll();
 }
+
